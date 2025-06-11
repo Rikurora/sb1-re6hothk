@@ -6,6 +6,9 @@ const IKS: React.FC = () => {
     {
       name: "Dr Fillemon Nangolo",
       role: "Chairperson",
+      expertise: "",
+      community: "",
+
     
     },
     {

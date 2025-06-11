@@ -6,6 +6,8 @@ const SpaceScienceCoun: React.FC = () => {
     {
       name: "Dr. Marius Mutorwa",
       role: "Chairperson",
+      expertise: "",
+      institution: ""
       
     },
     {
@@ -149,7 +151,7 @@ const SpaceScienceCoun: React.FC = () => {
                 The NSSC serves as an advisory body to the NCRST to safeguard the development and implementation of a national agenda on space science and technologies in all sectors.
                 </p>
                 <p>
-                The NSSC further provide strategic direction and guidance on policy issues pertaining to space science and technology. 
+                  The NSSC further provide strategic direction and guidance on policy issues pertaining to space science and technology. 
 
                 </p>
               </div>

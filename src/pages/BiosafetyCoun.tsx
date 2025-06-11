@@ -6,7 +6,8 @@ const BiosafetyCoun: React.FC = () => {
     {
       name: "Prof. Dr. Martha Kandawa-Schulz",
       role: "Chairperson",
-     
+      expertise: "",
+      institution: "",
     },
     {
       name: "Ms Priska Naimhwaka",
@@ -191,7 +192,7 @@ const BiosafetyCoun: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             <div className="bg-white border-2 border-gray-200 rounded-xl p-8">
               <div className="flex items-center space-x-3 mb-6">
-                <h3 className="text-2xl font-bold text-ncrst-grey leading-heading">Our Mission</h3>
+                <h3 className="text-2xl font-bold text-ncrst-grey leading-heading">Biosafety Act (2006)</h3>
               </div>
               <div className="space-y-4">
                 <p className="text-ncrst-grey-dark leading-body">
