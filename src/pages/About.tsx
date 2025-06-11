@@ -1,5 +1,5 @@
 import React from "react";
-import { Users, BookOpen, Scale, Building, Award, Target } from "lucide-react";
+import { Users, Scale, Award } from "lucide-react";
 import ceoImg from "../assets/ceo_img_prof_a.jpeg";
 
 const About: React.FC = () => {
