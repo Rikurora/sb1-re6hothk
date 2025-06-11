@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">Online Portals</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="https://gms.ncrst.na/" className="text-gray-300 hover:text-ncrst-gold transition-colors flex items-center space-x-1">
+                <a href="https://gms.ncrst.na" className="text-gray-300 hover:text-ncrst-gold transition-colors flex items-center space-x-1">
                   <span>Grants Management System</span>
                   <ExternalLink size={14} />
                 </a>
