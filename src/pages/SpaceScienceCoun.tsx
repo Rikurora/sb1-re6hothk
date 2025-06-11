@@ -143,13 +143,14 @@ const SpaceScienceCoun: React.FC = () => {
               <h2 className="text-3xl font-bold text-ncrst-grey mb-6 leading-heading">Our Mission</h2>
               <div className="space-y-4 text-ncrst-grey-dark leading-body">
                 <p>
-                  The National Space Science Council provides strategic guidance and oversight for Namibia's space science initiatives, satellite technology development, and astronomical research programs.
+                The NSSC performs its functions as per Section 19 (1) of the Research, Science and Technology Act, 2004 (Act 23 of 2004).
                 </p>
                 <p>
-                  We work to position Namibia as a leader in space science within the African continent, leveraging our unique geographical advantages and exceptional dark skies for world-class astronomical research.
+                The NSSC serves as an advisory body to the NCRST to safeguard the development and implementation of a national agenda on space science and technologies in all sectors.
                 </p>
                 <p>
-                  Our mandate includes developing space technology capabilities, promoting international collaboration, and ensuring that space science contributes to national development goals.
+                The NSSC further provide strategic direction and guidance on policy issues pertaining to space science and technology. 
+
                 </p>
               </div>
             </div>
