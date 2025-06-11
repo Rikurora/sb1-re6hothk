@@ -1,18 +1,5 @@
 import React from "react";
-import {
-  Rocket,
-  Target,
-  // Users,
-  Award,
-  TrendingUp,
-  Building,
-  Lightbulb,
-  DollarSign,
-  Download,
-  // FileText,
-  Star,
-  Globe,
-} from "lucide-react";
+import { Star } from "lucide-react";
 
 const Innovation: React.FC = () => {
   const innovators = [
