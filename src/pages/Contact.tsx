@@ -71,19 +71,19 @@ const Contact: React.FC = () => {
     {
       name: "Science & Technology",
       contact: "science@ncrst.na",
-      phone: "+264 61 431 7020",
+      phone: "+264 61 431 7048",
       description: "STEM education, science fair, and technology transfer"
     },
     {
       name: "Biosafety",
       contact: "biosafety@ncrst.na",
-      phone: "+264 61 431 7030",
+      phone: "+264 61 431 7008",
       description: "GMO permits, biosafety regulations, and compliance"
     },
     {
       name: "Corporate Services",
       contact: "admin@ncrst.na",
-      phone: "+264 61 431 7040",
+      phone: "+264 61 431 7006",
       description: "General administration, finance, and human resources"
     }
   ];
