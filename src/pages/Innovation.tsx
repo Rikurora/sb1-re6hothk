@@ -51,7 +51,33 @@ const Innovation: React.FC = () => {
       funding: "N$450,000 combined funding",
       image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
-  
+    {
+      name: "James Mwandemele",
+      company: "FinTech Namibia",
+      sector: "Financial Technology",
+      innovation: "Mobile payment platform for rural and underbanked populations",
+      impact: "50,000+ users, 300+ merchant partners",
+      funding: "N$280,000 from Innovation Fund",
+      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      name: "Elizabeth Nghipondoka",
+      company: "EduTech Innovations",
+      sector: "Education Technology",
+      innovation: "Digital learning platform with offline capabilities for remote schools",
+      impact: "25 schools, 2,000+ students benefiting from digital education",
+      funding: "N$180,000 from BOOSTUP 2024",
+      image: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      name: "Peter Shipanga",
+      company: "Mining Tech Solutions",
+      sector: "Mining Technology",
+      innovation: "AI-powered mineral exploration and safety monitoring systems",
+      impact: "40% improvement in exploration accuracy, enhanced worker safety",
+      funding: "N$520,000 from Industry Partnership",
+      image: "https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=400"
+    }
   ];
 
   const ecosystemPartners = [
