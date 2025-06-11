@@ -6,6 +6,9 @@ const IKS: React.FC = () => {
     {
       name: "Dr Fillemon Nangolo",
       role: "Chairperson",
+      expertise: "",
+      community: "",
+
     
     },
     {
@@ -152,13 +155,14 @@ const IKS: React.FC = () => {
               <h2 className="text-3xl font-bold text-ncrst-grey mb-6 leading-heading">Our Mission</h2>
               <div className="space-y-4 text-ncrst-grey-dark leading-body">
                 <p>
-                  The National Indigenous Knowledge System (IKS) serves as the custodian and promoter of Namibia's rich traditional knowledge heritage. We work to document, preserve, and integrate indigenous knowledge with modern scientific approaches.
+                The NIKSC performs its functions as per Section 19 (1) of the Research, Science and Technology Act, 2004 (Act 23 of 2004). 
                 </p>
                 <p>
-                  Our mandate encompasses the protection of traditional knowledge holders' rights, promotion of research that respects cultural protocols, and facilitation of knowledge transfer between generations.
+                The NIKSC serves as an advisory body to the NCRST to facilitate the development and implementation of a national agenda on Indigenous Knowledge System (IKS) in all sectors.
                 </p>
                 <p>
-                  We collaborate with traditional authorities, communities, researchers, and institutions to ensure that indigenous knowledge contributes to national development while maintaining its cultural integrity.
+                The Council further provides strategic direction and guidance on policy issues and other matters related to IKS, e.g., ethics in IKS research. 
+
                 </p>
               </div>
             </div>
