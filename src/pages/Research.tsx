@@ -305,7 +305,11 @@ const Research: React.FC = () => {
                   <div>
                     <h4 className="font-semibold text-ncrst-grey mb-2">Application Process</h4>
                     <ul className="space-y-1 text-sm text-ncrst-grey-dark">
-                      <li>• Submit completed application form</li>
+                      <li>• Submit completed application form to
+                          <a href="mailto: researchapplication@ncrst.na" className='"font-semibold text-ncrst-green underline hover:text-ncrst-blue ml-1'>
+                             researchapplication@ncrst.na
+                          </a> 
+                       </li>
                       <li>• Provide detailed research proposal</li>
                       <li>• Include ethical clearance certificate</li>
                       <li>• Pay applicable fees</li>
