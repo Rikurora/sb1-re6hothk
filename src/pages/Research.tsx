@@ -212,9 +212,10 @@ const Research: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <button className="bg-white text-ncrst-green px-6 py-3 rounded-lg font-semibold mt-6 hover:bg-gray-100 transition-colors">
-                  Access Grants Portal
-                </button>
+                <a href="https://gms.ncrst.na/"className="inline-block bg-white text-ncrst-green px-6 py-3 rounded-lg font-semibold mt-6 hover:bg-gray-100 transition-colors">
+                <span>Acess Grant Portal</span>
+                </a>
+
               </div>
             </div>
 
