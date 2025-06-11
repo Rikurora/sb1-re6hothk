@@ -10,11 +10,14 @@ const Footer: React.FC = () => {
           {/* About NCRST */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-               <img 
-              src="/NCRST.png" 
-              alt="NCRST Logo" 
-              className="w-12 h-12 object-contain"
+              <div className='bg-white'>
+                 <img 
+                  src="/NCRST.png" 
+                  alt="NCRST Logo" 
+                  className="w-12 h-12 object-contain"
             />
+              </div>
+              
               <div>
                 <h3 className="text-lg font-bold">NCRST</h3>
               </div>
