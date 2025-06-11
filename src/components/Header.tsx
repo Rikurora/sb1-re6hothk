@@ -28,7 +28,7 @@ const Header: React.FC = () => {
         { name: "Research Grants", href: "/research#grants" },
         { name: "Open Calls", href: "/research#calls" },
         { name: "Research Permits", href: "/research#permits" },
-        { name: "Institute Registration", href: "/research#registration" },
+        { name: "Research Institute Registration", href: "/research#registration" },
         { name: "Research Symposium", href: "/research#symposium" },
       ],
     },
