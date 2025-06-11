@@ -1,84 +1,350 @@
-import React from 'react';
-import { Rocket, Target, Users, Award, TrendingUp, Building, Lightbulb, DollarSign, Download, FileText, Star, Globe } from 'lucide-react';
+import React from "react";
+import {
+  Rocket,
+  Target,
+  // Users,
+  Award,
+  TrendingUp,
+  Building,
+  Lightbulb,
+  DollarSign,
+  Download,
+  // FileText,
+  Star,
+  Globe,
+} from "lucide-react";
 
 const Innovation: React.FC = () => {
   const challenges = [
     {
       name: "BOOSTUP Challenge",
-      description: "Namibia's flagship innovation competition supporting early-stage startups and entrepreneurs",
+      description:
+        "Namibia's flagship innovation competition supporting early-stage startups and entrepreneurs",
       prize: "N$500,000",
       participants: "200+ applications",
       categories: ["Technology", "Agriculture", "Health", "Environment"],
       status: "Applications Open",
-      deadline: "March 31, 2025"
+      deadline: "March 31, 2025",
     },
     {
       name: "Scale-Up Namibia",
-      description: "Growth acceleration program for established startups ready to scale their operations",
+      description:
+        "Growth acceleration program for established startups ready to scale their operations",
       prize: "N$1,000,000",
       participants: "50+ companies",
       categories: ["Fintech", "Agritech", "Healthtech", "Cleantech"],
       status: "Applications Open",
-      deadline: "April 15, 2025"
-    }
+      deadline: "April 15, 2025",
+    },
   ];
 
   const innovators = [
     {
-      name: "Dr. Sarah Nakamhela",
-      company: "AgriTech Solutions",
-      sector: "Agriculture Technology",
-      innovation: "Smart irrigation system using IoT sensors and AI for water optimization",
-      impact: "30% water savings, 25% yield increase across 500+ farms",
-      funding: "N$350,000 from BOOSTUP 2023",
-      image: "https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg?auto=compress&cs=tinysrgb&w=400"
+      name: "Victoria Haihambo",
+      company: "Agelvipa Online",
+      sector: "E-commerce and Digital empowerment",
+      innovation:
+        "Multi-vendor e-commerce platform connecting local businesses to markets, with a focus on empowering women through the Women E-hub initiative ",
+      impact:
+        "Developed a mobile app & website, expanded to an Author Hub for African writers, increased social media presence, and secured seed funding from Impacther Africa",
+      funding: "BOOST-UP programme",
+      image:
+        "https://scontent.fers4-1.fna.fbcdn.net/v/t39.30808-6/473694455_1784071045469124_2245374436978736370_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Q-XdgqlpUSAQ7kNvwFSbrBe&_nc_oc=AdkDF1Lr5hkZ3IcpwX3Iy0DX5A7PAGRivbUV1IFF9-FNddMhjBwptwPgjfHyRtzAbh0&_nc_zt=23&_nc_ht=scontent.fers4-1.fna&_nc_gid=a4puxn5rJRqgRsKy3jJMdQ&oh=00_AfPrus-3xhIR4iTk69JKeaNEd7h5tryd7tv1W-R-rzi_dQ&oe=684F25E7",
     },
     {
-      name: "Michael Itenge",
-      company: "HealthConnect Namibia",
+      name: "Sara Iyaloo S. Ekondo",
+      company: "Awana Food Trading Enterprise CC",
+      sector: "Agri-Processing & Food Waste Reduction",
+      innovation:
+        "Value-added food products (hibiscus syrup, lemonade concentrates, sauces) from excess/b-grade produce to combat food waste",
+      impact:
+        "Reduced farm-level food spoilage, created jobs, and built a small-holder farmer database for sustainable sourcing",
+      funding: "NICW programme",
+      image:
+        "https://scontent.fers4-1.fna.fbcdn.net/v/t39.30808-6/481176930_647080284525501_5494073247083489745_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rNRO26IIbQIQ7kNvwE0pR36&_nc_oc=Adk1dFHYI2LntyH06iqcVS4B15CeqdIL3EkijSxR4PQ8Iw_XAJxLCRip-tioeznMbAM&_nc_zt=23&_nc_ht=scontent.fers4-1.fna&_nc_gid=Z5iFbcKMLejdjJU8n97phw&oh=00_AfOg1Wlh_hqTApR7hSyQK5pWcp7apR-ZOufUStmQUjP5cQ&oe=684F37F5",
+    },
+    {
+      name: "Verna Nghuumono",
+      company: "Laverne Pads Manufacturing CC",
+      sector: "Menstrual Health & Sustainable Hygiene",
+      innovation:
+        "Affordable, reusable sanitary pads to combat period poverty and reduce school dropouts",
+      impact:
+        "Reducing period poverty in Namibia, decreasing school absenteeism, and providing eco-friendly menstrual solutions",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Vaughan Weiss",
+      company: "Wision Media and Drafting",
+      sector: "Visual Communication & Immersive Technology",
+      innovation:
+        "3D rendering, animation and VR solutions to transform complex ideas into clear visual communications",
+      impact:
+        "Enhancing brand awareness, investor attraction and customer acquisition through cutting-edge visual storytelling",
+      funding: "BOOST-UP programme",
+      image:
+        "https://scontent.fers4-1.fna.fbcdn.net/v/t39.30808-6/480271760_1570729174329722_1139182505980930790_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=s3u4iZ69_xUQ7kNvwGdzXew&_nc_oc=Adn8ypogsZJ8IwbL-4enlZC7mCTBwJe9h2zlLyNLvQDlXw1aHqZpKXufmQ5ArYrVYHk&_nc_zt=23&_nc_ht=scontent.fers4-1.fna&_nc_gid=eXAKZXYrzWc-OtuhiSOgJw&oh=00_AfMNI8HFdmEBNfr1gOWd0Ne0M8dRN0df-S0PA7NRx8lOBQ&oe=684F2BBD",
+    },
+    {
+      name: "Haita Ester",
+      company: "Nzimbu Investment CC",
+      sector: "Organic Food Production & Health",
+      innovation:
+        "Pure organic juices, jams, tea, and oil made from indigenous Namibian ingredients (Nongongo fruits, Mutete vegetables)",
+      impact:
+        "Promoting health through local organic products while preserving traditional food knowledge",
+      funding: "NICW programme",
+      image:
+        "https://scontent.fers4-1.fna.fbcdn.net/v/t39.30808-6/489952016_1176531004259108_8979381946798009155_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=nJOye_WZi5AQ7kNvwHtWOW7&_nc_oc=Adn7wv-1SlOR-BlprmGn6v6Jp9exjTKGxu_96iY5_sqaMXhkRCkFKqCQLHkrQORc5BI&_nc_zt=23&_nc_ht=scontent.fers4-1.fna&_nc_gid=fbKv1RazPZ8Y5QDpSi9BjA&oh=00_AfNHfQ6tQK9LPRQ-bL6Vp4c30N9_A6MfyfFNW_1iwrchzg&oe=684F0235",
+    },
+    {
+      name: "Dankie Nendongo",
+      company: "Leo Canopus Inc",
+      sector: "Digital Infrastructure & Connectivity Solutions",
+      innovation:
+        "Free community Wi-Fi solutions revolutionizing internet access deployment in underserved areas",
+      impact:
+        "Closing Africa's digital divide - targeting the 40% of continent without internet access",
+      funding: "BOOST-UP programme",
+      image:
+        "https://media.licdn.com/dms/image/v2/C4D03AQFbbr5sI_AWsQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1640990216019?e=1755129600&v=beta&t=t4WgTRQD5r0QgMLBfr2mah7V2kixVSSARTPhuUVOsa8",
+    },
+    {
+      name: "Jesse Liula Schiceya",
+      company: "Patient Care",
       sector: "Healthcare Technology",
-      innovation: "Telemedicine platform connecting rural communities with healthcare professionals",
-      impact: "10,000+ patients served, 50+ healthcare workers trained",
-      funding: "N$200,000 from Scale-Up Namibia",
-      image: "https://images.pexels.com/photos/5327580/pexels-photo-5327580.jpeg?auto=compress&cs=tinysrgb&w=400"
+      innovation: "Telemedicine and healthcare insurance platform",
+      impact: "Provides accessible healthcare services and insurance",
+      funding: "BOOST-UP programme",
+      image:
+        "https://media.licdn.com/dms/image/v2/D4D03AQEDfYQCcVls3A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720142406873?e=1755129600&v=beta&t=fou3taCeIsGvab1Tz8nvbWeK7WlDliWSe4G7NU6altk",
     },
     {
-      name: "Anna Shikongo",
-      company: "EcoEnergy Solutions",
-      sector: "Renewable Energy",
-      innovation: "Solar-powered water purification systems for off-grid communities",
-      impact: "200+ households with clean water access, 15 jobs created",
-      funding: "N$450,000 combined funding",
-      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400"
+      name: "Stacey Likando",
+      company: "THANK-YOU WALLET",
+      sector: "Technology",
+      innovation: "Community empowerment through direct payments",
+      impact: "Enables seamless payments to stores and service stations",
+      funding: "BOOST-UP programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
     },
-  
+    {
+      name: "Roswitha Matheus",
+      company: "Green kitchen's Tech",
+      sector: "Clean Energy",
+      innovation: "Manufacturing clean cook stoves",
+      impact: "Provides clean cooking solutions and promotes green energy",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Akuumba Andrias",
+      company: "Kaskola",
+      sector: "Digital Marketing",
+      innovation: "Digitalization of the Namibian Nomad Visa",
+      impact: "Helps market and digitalize visa processes",
+      funding: "BOOST-UP programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Wilbard Lazarus",
+      company: "Okaluli (by Ausgezeichnet Technische)",
+      sector: "Education Technology",
+      innovation: "Empowering students in Sub-Saharan Africa",
+      impact: "Provides accessible education solutions",
+      funding: "BOOST-UP programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Andreas Elifas",
+      company: "Jumper Namibia",
+      sector: "Creative Agency",
+      innovation: "Innovative design, VR experiences, and visual communication",
+      impact: "Delivers impactful creative solutions",
+      funding: "BOOST-UP programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Cecilia Naule",
+      company: "Rural Power Solutions CC",
+      sector: "Renewable Energy",
+      innovation: "Solar cooking energy solutions",
+      impact: "Provides energy access to people with limited electricity",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Diana Nakwenye-Nakuumba",
+      company: "DN-NAK Investment CC",
+      sector: "Food Processing",
+      innovation: "Nutritional food products (e.g., jam, juice, chutney)",
+      impact: "Adds value to local produce and promotes healthy eating",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Loide Dawid",
+      company: "K-12 EdTech Inc.",
+      sector: "Education Technology",
+      innovation: "Virtual teaching robots and digitized learning",
+      impact: "Streamlines and automates education for students",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Selma Matheus",
+      company: "Kalahari Truffles (Pty) Ltd",
+      sector: "Agriculture & Food",
+      innovation: "Farming and supply of Kalahari truffles",
+      impact: "Expands market for Namibian truffles beyond Africa",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Saarty Mikka",
+      company: "Kernytic Investments CC",
+      sector: "Interior Design",
+      innovation: "Interior Design",
+      impact: "Enables seamless payments to s",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Eiretha-Cynthia Rukira-Veiko",
+      company: "Oilonga-Media CC",
+      sector: "Media & Procurement",
+      innovation: "Innovative solutions for procurement challenges",
+      impact: "Supports bidders and buyers in the procurement market",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Anna-Liisa Hatutale",
+      company: "Landu Fish Spreads",
+      sector: "Food Processing",
+      innovation: "Value-added fish products (e.g., fish spreads)",
+      impact: "Enhances utilization of horse mackerel and reduces waste",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Kristofine Ekandjo",
+      company: "Tulande Online",
+      sector: "E-Commerce",
+      innovation: "Online platform for digital trade",
+      impact: "Expands market access for vendors and buyers",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Matjita Hengua",
+      company: "Otjisajiena Farming",
+      sector: "Agriculture",
+      innovation: "Home gardening and homemade jams",
+      impact: "Promotes local food production and self-sufficiency",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Maria Shipapo",
+      company: "MIST Agricultural Laboratory",
+      sector: "Agri-Tech",
+      innovation: "Agricultural laboratory services",
+      impact: "Agricultural laboratory services",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Ndinelago Illeka",
+      company: "Granny's Green Garden",
+      sector: "Agriculture",
+      innovation: "Local farming and produce",
+      impact: "Promotes sustainable gardening practices",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Lydia Ndinelao Horn",
+      company: "Namibia Institute of Seeds",
+      sector: "Agriculture",
+      innovation: "Seed production and distribution",
+      impact: "Enhances agricultural productivity with quality seeds",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Ndapewa Treresius",
+      company: "Possible Trading cc",
+      sector: "Disability Tech",
+      innovation: "Software for visually and hearing-impaired communities",
+      impact:
+        "Improves accessibility and quality of life for persons with disabilities",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Twahafffwa Izaloo Nambuwa",
+      company: "Petwa Medical Practice",
+      sector: "Healthcare",
+      innovation: "Medical-grade topical products for skin conditions",
+      impact: "Provides solutions for acne and pigmentation issues",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Helaria Shuudeni",
+      company: "VIBERA INVESTMENTS CC",
+      sector: "Body Care",
+      innovation: "Natural and moisturizing body care products",
+      impact: "Offers spunny and sustainable personal care solutions",
+      funding: "NICW programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
+    {
+      name: "Octavius Maketo",
+      company: "Ubuntu Aquatic CC",
+      sector: "Sustainable Agriculture",
+      innovation: "Integration of aquaculture and hydroponics",
+      impact: "Addresses waste disposal and promotes sustainability",
+      funding: "BOOST-UP programme",
+      image: "https://lasanitarym.com/img/blog3.jpg",
+    },
   ];
 
   const ecosystemPartners = [
     {
       name: "Startup Incubators",
       count: "8",
-      description: "Supporting early-stage entrepreneurs with mentorship and resources",
-      examples: ["FabLab Namibia", "Innovation Village", "Tech Hub"]
+      description:
+        "Supporting early-stage entrepreneurs with mentorship and resources",
+      examples: ["FabLab Namibia", "Innovation Village", "Tech Hub"],
     },
     {
       name: "Venture Capital",
       count: "5",
-      description: "Investment funds focused on Namibian startups and growth companies",
-      examples: ["Namibia Investment Fund", "Regional VC Partners", "Impact Investors"]
+      description:
+        "Investment funds focused on Namibian startups and growth companies",
+      examples: [
+        "Namibia Investment Fund",
+        "Regional VC Partners",
+        "Impact Investors",
+      ],
     },
     {
       name: "Corporate Partners",
       count: "15",
-      description: "Large corporations supporting innovation through partnerships",
-      examples: ["Banking Sector", "Mining Companies", "Telecommunications"]
+      description:
+        "Large corporations supporting innovation through partnerships",
+      examples: ["Banking Sector", "Mining Companies", "Telecommunications"],
     },
     {
       name: "Universities",
       count: "4",
-      description: "Academic institutions driving research and student entrepreneurship",
-      examples: ["UNAM", "NUST", "IUM", "University of Namibia"]
-    }
+      description:
+        "Academic institutions driving research and student entrepreneurship",
+      examples: ["UNAM", "NUST", "IUM", "University of Namibia"],
+    },
   ];
 
   return (
@@ -87,9 +353,12 @@ const Innovation: React.FC = () => {
       <section className="bg-ncrst-green text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">Innovation & Entrepreneurship</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">
+              Innovation & Entrepreneurship
+            </h1>
             <p className="text-xl max-w-3xl mx-auto leading-body opacity-90">
-              Fostering a vibrant innovation ecosystem that transforms ideas into impactful businesses driving Namibia's economic growth.
+              Fostering a vibrant innovation ecosystem that transforms ideas
+              into impactful businesses driving Namibia's economic growth.
             </p>
           </div>
         </div>
@@ -99,54 +368,79 @@ const Innovation: React.FC = () => {
       <section id="boostup" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-ncrst-grey mb-4 leading-heading">Innovation Challenges</h2>
+            <h2 className="text-3xl font-bold text-ncrst-grey mb-4 leading-heading">
+              Innovation Challenges
+            </h2>
             <p className="text-lg text-ncrst-grey-dark max-w-3xl mx-auto leading-body">
-              Competitive programs designed to identify, support, and scale innovative solutions to Namibian challenges.
+              Competitive programs designed to identify, support, and scale
+              innovative solutions to Namibian challenges.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             {challenges.map((challenge, index) => (
-              <div key={index} className="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-ncrst-green hover:shadow-xl transition-all">
+              <div
+                key={index}
+                className="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-ncrst-green hover:shadow-xl transition-all"
+              >
                 <div className="bg-gradient-to-r from-ncrst-green to-ncrst-blue text-white p-6">
                   <div className="flex items-center space-x-3 mb-3">
                     <Rocket size={32} />
-                    <h3 className="text-2xl font-bold leading-heading">{challenge.name}</h3>
+                    <h3 className="text-2xl font-bold leading-heading">
+                      {challenge.name}
+                    </h3>
                   </div>
-                  <p className="opacity-90 leading-body">{challenge.description}</p>
+                  <p className="opacity-90 leading-body">
+                    {challenge.description}
+                  </p>
                 </div>
-                
+
                 <div className="p-6">
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-ncrst-green">{challenge.prize}</div>
-                      <div className="text-sm text-ncrst-grey-dark">Total Prize Pool</div>
+                      <div className="text-2xl font-bold text-ncrst-green">
+                        {challenge.prize}
+                      </div>
+                      <div className="text-sm text-ncrst-grey-dark">
+                        Total Prize Pool
+                      </div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-ncrst-blue">{challenge.participants}</div>
-                      <div className="text-sm text-ncrst-grey-dark">Expected Applications</div>
+                      <div className="text-2xl font-bold text-ncrst-blue">
+                        {challenge.participants}
+                      </div>
+                      <div className="text-sm text-ncrst-grey-dark">
+                        Expected Applications
+                      </div>
                     </div>
                   </div>
 
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-semibold text-ncrst-grey mb-2">Focus Areas</h4>
+                      <h4 className="font-semibold text-ncrst-grey mb-2">
+                        Focus Areas
+                      </h4>
                       <div className="flex flex-wrap gap-2">
                         {challenge.categories.map((category, idx) => (
-                          <span key={idx} className="bg-ncrst-grey-light text-ncrst-grey px-3 py-1 rounded-full text-sm">
+                          <span
+                            key={idx}
+                            className="bg-ncrst-grey-light text-ncrst-grey px-3 py-1 rounded-full text-sm"
+                          >
                             {category}
                           </span>
                         ))}
                       </div>
                     </div>
-                    
+
                     <div className="flex items-center justify-between">
                       <div>
-                        <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                          challenge.status === 'Applications Open' 
-                            ? 'bg-green-100 text-green-800' 
-                            : 'bg-gray-100 text-gray-800'
-                        }`}>
+                        <span
+                          className={`px-3 py-1 rounded-full text-sm font-medium ${
+                            challenge.status === "Applications Open"
+                              ? "bg-green-100 text-green-800"
+                              : "bg-gray-100 text-gray-800"
+                          }`}
+                        >
                           {challenge.status}
                         </span>
                       </div>
@@ -170,9 +464,12 @@ const Innovation: React.FC = () => {
       <section id="scaleup" className="py-16 bg-ncrst-grey-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-ncrst-grey mb-4 leading-heading">Scale-Up Namibia</h2>
+            <h2 className="text-3xl font-bold text-ncrst-grey mb-4 leading-heading">
+              Scale-Up Namibia
+            </h2>
             <p className="text-lg text-ncrst-grey-dark max-w-3xl mx-auto leading-body">
-              Growth acceleration program for established startups ready to scale their operations.
+              Growth acceleration program for established startups ready to
+              scale their operations.
             </p>
           </div>
 
@@ -182,22 +479,34 @@ const Innovation: React.FC = () => {
                 <div className="bg-ncrst-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <TrendingUp className="text-ncrst-blue" size={32} />
                 </div>
-                <h3 className="text-lg font-bold text-ncrst-grey mb-3 leading-heading">Growth Support</h3>
-                <p className="text-sm text-ncrst-grey-dark">Mentorship and resources for scaling operations</p>
+                <h3 className="text-lg font-bold text-ncrst-grey mb-3 leading-heading">
+                  Growth Support
+                </h3>
+                <p className="text-sm text-ncrst-grey-dark">
+                  Mentorship and resources for scaling operations
+                </p>
               </div>
               <div className="text-center">
                 <div className="bg-ncrst-green/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <DollarSign className="text-ncrst-green" size={32} />
                 </div>
-                <h3 className="text-lg font-bold text-ncrst-grey mb-3 leading-heading">Investment Ready</h3>
-                <p className="text-sm text-ncrst-grey-dark">Preparation for larger investment rounds</p>
+                <h3 className="text-lg font-bold text-ncrst-grey mb-3 leading-heading">
+                  Investment Ready
+                </h3>
+                <p className="text-sm text-ncrst-grey-dark">
+                  Preparation for larger investment rounds
+                </p>
               </div>
               <div className="text-center">
                 <div className="bg-ncrst-gold/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Globe className="text-ncrst-grey" size={32} />
                 </div>
-                <h3 className="text-lg font-bold text-ncrst-grey mb-3 leading-heading">Market Expansion</h3>
-                <p className="text-sm text-ncrst-grey-dark">Support for regional and international expansion</p>
+                <h3 className="text-lg font-bold text-ncrst-grey mb-3 leading-heading">
+                  Market Expansion
+                </h3>
+                <p className="text-sm text-ncrst-grey-dark">
+                  Support for regional and international expansion
+                </p>
               </div>
             </div>
           </div>
@@ -208,16 +517,21 @@ const Innovation: React.FC = () => {
       <section id="national-programme" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-ncrst-grey mb-4 leading-heading">National Innovation Programme</h2>
+            <h2 className="text-3xl font-bold text-ncrst-grey mb-4 leading-heading">
+              National Innovation Programme
+            </h2>
             <p className="text-lg text-ncrst-grey-dark max-w-3xl mx-auto leading-body">
-              Comprehensive framework for promoting innovation across all sectors of the Namibian economy.
+              Comprehensive framework for promoting innovation across all
+              sectors of the Namibian economy.
             </p>
           </div>
 
           <div className="bg-ncrst-blue text-white rounded-xl p-8 mb-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-2xl font-bold mb-4 leading-heading">Programme Objectives</h3>
+                <h3 className="text-2xl font-bold mb-4 leading-heading">
+                  Programme Objectives
+                </h3>
                 <ul className="space-y-3">
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-ncrst-gold rounded-full mt-2"></div>
@@ -225,7 +539,9 @@ const Innovation: React.FC = () => {
                   </li>
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-ncrst-gold rounded-full mt-2"></div>
-                    <span>Support technology transfer and commercialization</span>
+                    <span>
+                      Support technology transfer and commercialization
+                    </span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-ncrst-gold rounded-full mt-2"></div>
@@ -239,9 +555,16 @@ const Innovation: React.FC = () => {
               </div>
               <div className="text-center">
                 <div className="bg-white/10 p-6 rounded-xl">
-                  <Lightbulb size={64} className="text-ncrst-gold mx-auto mb-4" />
-                  <h4 className="text-xl font-bold mb-2">Innovation Funding Guide</h4>
-                  <p className="text-sm opacity-90 mb-4">Comprehensive guide to funding opportunities</p>
+                  <Lightbulb
+                    size={64}
+                    className="text-ncrst-gold mx-auto mb-4"
+                  />
+                  <h4 className="text-xl font-bold mb-2">
+                    Innovation Funding Guide
+                  </h4>
+                  <p className="text-sm opacity-90 mb-4">
+                    Comprehensive guide to funding opportunities
+                  </p>
                   <button className="bg-ncrst-gold text-ncrst-grey px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors flex items-center space-x-2 mx-auto">
                     <Download size={16} />
                     <span>Download PDF</span>
@@ -257,49 +580,82 @@ const Innovation: React.FC = () => {
       <section id="saic" className="py-16 bg-ncrst-grey-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-ncrst-grey mb-4 leading-heading">Southern Africa Innovation Collective (SAIC)</h2>
+            <h2 className="text-3xl font-bold text-ncrst-grey mb-4 leading-heading">
+              Southern Africa Innovation Collective (SAIC)
+            </h2>
             <p className="text-lg text-ncrst-grey-dark max-w-3xl mx-auto leading-body">
-              Regional collaboration platform connecting innovators across Southern Africa.
+              Regional collaboration platform connecting innovators across
+              Southern Africa.
             </p>
           </div>
 
           <div className="bg-white rounded-xl shadow-lg p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-bold text-ncrst-grey mb-4 leading-heading">SAIC Initiatives</h3>
+                <h3 className="text-xl font-bold text-ncrst-grey mb-4 leading-heading">
+                  SAIC Initiatives
+                </h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-ncrst-green rounded-full mt-2"></div>
                     <div>
-                      <h4 className="font-semibold text-ncrst-grey">Cross-Border Innovation</h4>
-                      <p className="text-sm text-ncrst-grey-dark">Facilitating innovation partnerships across SADC countries</p>
+                      <h4 className="font-semibold text-ncrst-grey">
+                        Cross-Border Innovation
+                      </h4>
+                      <p className="text-sm text-ncrst-grey-dark">
+                        Facilitating innovation partnerships across SADC
+                        countries
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-ncrst-green rounded-full mt-2"></div>
                     <div>
-                      <h4 className="font-semibold text-ncrst-grey">Knowledge Sharing</h4>
-                      <p className="text-sm text-ncrst-grey-dark">Platform for sharing best practices and resources</p>
+                      <h4 className="font-semibold text-ncrst-grey">
+                        Knowledge Sharing
+                      </h4>
+                      <p className="text-sm text-ncrst-grey-dark">
+                        Platform for sharing best practices and resources
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-ncrst-green rounded-full mt-2"></div>
                     <div>
-                      <h4 className="font-semibold text-ncrst-grey">Joint Programs</h4>
-                      <p className="text-sm text-ncrst-grey-dark">Collaborative innovation challenges and funding opportunities</p>
+                      <h4 className="font-semibold text-ncrst-grey">
+                        Joint Programs
+                      </h4>
+                      <p className="text-sm text-ncrst-grey-dark">
+                        Collaborative innovation challenges and funding
+                        opportunities
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-ncrst-grey mb-4 leading-heading">Member Countries</h3>
+                <h3 className="text-xl font-bold text-ncrst-grey mb-4 leading-heading">
+                  Member Countries
+                </h3>
                 <div className="grid grid-cols-2 gap-2 text-sm">
-                  <div className="bg-ncrst-grey-light p-2 rounded text-center">Namibia</div>
-                  <div className="bg-ncrst-grey-light p-2 rounded text-center">South Africa</div>
-                  <div className="bg-ncrst-grey-light p-2 rounded text-center">Botswana</div>
-                  <div className="bg-ncrst-grey-light p-2 rounded text-center">Zambia</div>
-                  <div className="bg-ncrst-grey-light p-2 rounded text-center">Zimbabwe</div>
-                  <div className="bg-ncrst-grey-light p-2 rounded text-center">Mozambique</div>
+                  <div className="bg-ncrst-grey-light p-2 rounded text-center">
+                    Namibia
+                  </div>
+                  <div className="bg-ncrst-grey-light p-2 rounded text-center">
+                    South Africa
+                  </div>
+                  <div className="bg-ncrst-grey-light p-2 rounded text-center">
+                    Botswana
+                  </div>
+                  <div className="bg-ncrst-grey-light p-2 rounded text-center">
+                    Zambia
+                  </div>
+                  <div className="bg-ncrst-grey-light p-2 rounded text-center">
+                    Zimbabwe
+                  </div>
+                  <div className="bg-ncrst-grey-light p-2 rounded text-center">
+                    Mozambique
+                  </div>
                 </div>
               </div>
             </div>
@@ -311,38 +667,52 @@ const Innovation: React.FC = () => {
       <section id="iaa" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-ncrst-grey mb-4 leading-heading">Innovation Agencies in Africa Network (IAA)</h2>
+            <h2 className="text-3xl font-bold text-ncrst-grey mb-4 leading-heading">
+              Innovation Agencies in Africa Network (IAA)
+            </h2>
             <p className="text-lg text-ncrst-grey-dark max-w-3xl mx-auto leading-body">
-              Continental network of innovation agencies promoting African innovation and technology development.
+              Continental network of innovation agencies promoting African
+              innovation and technology development.
             </p>
           </div>
 
           <div className="bg-ncrst-green text-white rounded-xl p-8">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold mb-4 leading-heading">Continental Collaboration</h3>
+              <h3 className="text-2xl font-bold mb-4 leading-heading">
+                Continental Collaboration
+              </h3>
               <p className="text-lg opacity-90 max-w-3xl mx-auto leading-body">
-                Connecting innovation ecosystems across Africa to accelerate technology transfer and knowledge sharing.
+                Connecting innovation ecosystems across Africa to accelerate
+                technology transfer and knowledge sharing.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="bg-white/10 p-4 rounded-lg mb-3">
                   <h4 className="font-bold text-ncrst-gold">25+ Countries</h4>
                 </div>
-                <p className="text-sm opacity-90">African innovation agencies participating</p>
+                <p className="text-sm opacity-90">
+                  African innovation agencies participating
+                </p>
               </div>
               <div className="text-center">
                 <div className="bg-white/10 p-4  rounded-lg mb-3">
                   <h4 className="font-bold text-ncrst-gold">50+ Programs</h4>
                 </div>
-                <p className="text-sm opacity-90">Joint innovation initiatives and exchanges</p>
+                <p className="text-sm opacity-90">
+                  Joint innovation initiatives and exchanges
+                </p>
               </div>
               <div className="text-center">
                 <div className="bg-white/10 p-4 rounded-lg mb-3">
-                  <h4 className="font-bold text-ncrst-gold">1000+ Innovators</h4>
+                  <h4 className="font-bold text-ncrst-gold">
+                    1000+ Innovators
+                  </h4>
                 </div>
-                <p className="text-sm opacity-90">Connected through the network</p>
+                <p className="text-sm opacity-90">
+                  Connected through the network
+                </p>
               </div>
             </div>
           </div>
@@ -353,15 +723,21 @@ const Innovation: React.FC = () => {
       <section id="innovators-hub" className="py-16 bg-ncrst-grey-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-ncrst-grey mb-4 leading-heading">Innovators Hub</h2>
+            <h2 className="text-3xl font-bold text-ncrst-grey mb-4 leading-heading">
+              Innovators Hub
+            </h2>
             <p className="text-lg text-ncrst-grey-dark max-w-3xl mx-auto leading-body">
-              Celebrating the achievements of innovative Namibian entrepreneurs making a real impact.
+              Celebrating the achievements of innovative Namibian entrepreneurs
+              making a real impact.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {innovators.map((innovator, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div
+                key={index}
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+              >
                 <div className="relative h-48">
                   <img
                     src={innovator.image}
@@ -380,25 +756,39 @@ const Innovation: React.FC = () => {
                       <Star className="text-ncrst-green" size={20} />
                     </div>
                     <div>
-                      <h3 className="font-bold text-ncrst-grey leading-heading">{innovator.name}</h3>
-                      <p className="text-sm text-ncrst-blue font-medium">{innovator.company}</p>
+                      <h3 className="font-bold text-ncrst-grey leading-heading">
+                        {innovator.name}
+                      </h3>
+                      <p className="text-sm text-ncrst-blue font-medium">
+                        {innovator.company}
+                      </p>
                     </div>
                   </div>
-                  
+
                   <div className="space-y-3 text-sm">
                     <div>
-                      <h4 className="font-semibold text-ncrst-grey mb-1">Innovation</h4>
-                      <p className="text-ncrst-grey-dark">{innovator.innovation}</p>
+                      <h4 className="font-semibold text-ncrst-grey mb-1">
+                        Innovation
+                      </h4>
+                      <p className="text-ncrst-grey-dark">
+                        {innovator.innovation}
+                      </p>
                     </div>
-                    
+
                     <div>
-                      <h4 className="font-semibold text-ncrst-grey mb-1">Impact</h4>
+                      <h4 className="font-semibold text-ncrst-grey mb-1">
+                        Impact
+                      </h4>
                       <p className="text-ncrst-grey-dark">{innovator.impact}</p>
                     </div>
-                    
+
                     <div>
-                      <h4 className="font-semibold text-ncrst-grey mb-1">Funding</h4>
-                      <p className="text-ncrst-green font-medium">{innovator.funding}</p>
+                      <h4 className="font-semibold text-ncrst-grey mb-1">
+                        Funding
+                      </h4>
+                      <p className="text-ncrst-green font-medium">
+                        {innovator.funding}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -412,23 +802,38 @@ const Innovation: React.FC = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-ncrst-grey mb-4 leading-heading">Innovation Ecosystem</h2>
+            <h2 className="text-3xl font-bold text-ncrst-grey mb-4 leading-heading">
+              Innovation Ecosystem
+            </h2>
             <p className="text-lg text-ncrst-grey-dark max-w-3xl mx-auto leading-body">
-              A comprehensive network of partners supporting entrepreneurs at every stage of their journey.
+              A comprehensive network of partners supporting entrepreneurs at
+              every stage of their journey.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {ecosystemPartners.map((partner, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg p-6 text-center">
+              <div
+                key={index}
+                className="bg-white rounded-xl shadow-lg p-6 text-center"
+              >
                 <div className="bg-ncrst-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-ncrst-blue">{partner.count}</span>
+                  <span className="text-2xl font-bold text-ncrst-blue">
+                    {partner.count}
+                  </span>
                 </div>
-                <h3 className="text-lg font-bold text-ncrst-grey mb-3 leading-heading">{partner.name}</h3>
-                <p className="text-sm text-ncrst-grey-dark mb-4 leading-body">{partner.description}</p>
+                <h3 className="text-lg font-bold text-ncrst-grey mb-3 leading-heading">
+                  {partner.name}
+                </h3>
+                <p className="text-sm text-ncrst-grey-dark mb-4 leading-body">
+                  {partner.description}
+                </p>
                 <div className="space-y-1">
                   {partner.examples.map((example, idx) => (
-                    <div key={idx} className="text-xs bg-ncrst-grey-light text-ncrst-grey px-2 py-1 rounded">
+                    <div
+                      key={idx}
+                      className="text-xs bg-ncrst-grey-light text-ncrst-grey px-2 py-1 rounded"
+                    >
                       {example}
                     </div>
                   ))}
@@ -439,42 +844,62 @@ const Innovation: React.FC = () => {
 
           {/* Ecosystem Map */}
           <div className="bg-white rounded-xl shadow-lg p-8">
-            <h3 className="text-xl font-bold text-ncrst-grey mb-6 text-center leading-heading">Innovation Support Journey</h3>
+            <h3 className="text-xl font-bold text-ncrst-grey mb-6 text-center leading-heading">
+              Innovation Support Journey
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
               <div className="text-center">
                 <div className="bg-red-100 p-4 rounded-lg mb-3">
                   <Lightbulb className="text-red-600 mx-auto" size={24} />
                 </div>
-                <h4 className="font-semibold text-ncrst-grey text-sm">Ideation</h4>
-                <p className="text-xs text-ncrst-grey-dark">Workshops, Hackathons</p>
+                <h4 className="font-semibold text-ncrst-grey text-sm">
+                  Ideation
+                </h4>
+                <p className="text-xs text-ncrst-grey-dark">
+                  Workshops, Hackathons
+                </p>
               </div>
               <div className="text-center">
                 <div className="bg-orange-100 p-4 rounded-lg mb-3">
                   <Target className="text-orange-600 mx-auto" size={24} />
                 </div>
-                <h4 className="font-semibold text-ncrst-grey text-sm">Validation</h4>
-                <p className="text-xs text-ncrst-grey-dark">Market Research, MVP</p>
+                <h4 className="font-semibold text-ncrst-grey text-sm">
+                  Validation
+                </h4>
+                <p className="text-xs text-ncrst-grey-dark">
+                  Market Research, MVP
+                </p>
               </div>
               <div className="text-center">
                 <div className="bg-blue-100 p-4 rounded-lg mb-3">
                   <Building className="text-blue-600 mx-auto" size={24} />
                 </div>
-                <h4 className="font-semibold text-ncrst-grey text-sm">Incubation</h4>
-                <p className="text-xs text-ncrst-grey-dark">Mentorship, Resources</p>
+                <h4 className="font-semibold text-ncrst-grey text-sm">
+                  Incubation
+                </h4>
+                <p className="text-xs text-ncrst-grey-dark">
+                  Mentorship, Resources
+                </p>
               </div>
               <div className="text-center">
                 <div className="bg-green-100 p-4 rounded-lg mb-3">
                   <TrendingUp className="text-green-600 mx-auto" size={24} />
                 </div>
-                <h4 className="font-semibold text-ncrst-grey text-sm">Acceleration</h4>
+                <h4 className="font-semibold text-ncrst-grey text-sm">
+                  Acceleration
+                </h4>
                 <p className="text-xs text-ncrst-grey-dark">Funding, Scaling</p>
               </div>
               <div className="text-center">
                 <div className="bg-purple-100 p-4 rounded-lg mb-3">
                   <Award className="text-purple-600 mx-auto" size={24} />
                 </div>
-                <h4 className="font-semibold text-ncrst-grey text-sm">Growth</h4>
-                <p className="text-xs text-ncrst-grey-dark">Investment, Expansion</p>
+                <h4 className="font-semibold text-ncrst-grey text-sm">
+                  Growth
+                </h4>
+                <p className="text-xs text-ncrst-grey-dark">
+                  Investment, Expansion
+                </p>
               </div>
             </div>
           </div>
