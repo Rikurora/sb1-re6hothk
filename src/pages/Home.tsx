@@ -1,89 +1,113 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowRight, Calendar, FileText, Users, Award, Brain, Rocket, Microscope, Target, Lightbulb, Globe, Shield, BookOpen, ChevronDown } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  ArrowRight,
+  Calendar,
+  Users,
+  Award,
+  Brain,
+  Microscope,
+  Target,
+  Lightbulb,
+  Globe,
+  Shield,
+  BookOpen,
+  ChevronDown,
+} from "lucide-react";
 
 const Home: React.FC = () => {
   const strategicPillars = [
     {
       title: "Science",
-      description: "Advancing scientific knowledge through research, education, and innovation to address national challenges.",
+      description:
+        "Advancing scientific knowledge through research, education, and innovation to address national challenges.",
       icon: Microscope,
       color: "bg-ncrst-blue",
-      link: "/science"
+      link: "/science",
     },
     {
       title: "Technology & Innovation Promotion",
-      description: "Fostering technological advancement and innovation ecosystems for economic growth.",
+      description:
+        "Fostering technological advancement and innovation ecosystems for economic growth.",
       icon: Brain,
       color: "bg-ncrst-green",
-      link: "/technology"
+      link: "/technology",
     },
     {
       title: "Smart Partnerships & Cooperation",
-      description: "Building strategic alliances with local and international partners for knowledge exchange.",
+      description:
+        "Building strategic alliances with local and international partners for knowledge exchange.",
       icon: Globe,
       color: "bg-ncrst-gold",
-      link: "/about#partnerships"
+      link: "/about#partnerships",
     },
     {
       title: "Enabling Policy & Regulatory Environment",
-      description: "Developing supportive policies and regulations that promote research and innovation.",
+      description:
+        "Developing supportive policies and regulations that promote research and innovation.",
       icon: Shield,
       color: "bg-ncrst-grey",
-      link: "/about#legislation"
+      link: "/about#legislation",
     },
     {
       title: "Building Research & Development Capacity",
-      description: "Strengthening human resources and infrastructure for sustainable R&D capabilities.",
+      description:
+        "Strengthening human resources and infrastructure for sustainable R&D capabilities.",
       icon: Award,
       color: "bg-purple-600",
-      link: "/research"
-    }
+      link: "/research",
+    },
   ];
 
   const priorityPrograms = [
     {
       title: "National Programme on RSTI",
-      description: "A 3–4 year directional policy framework defining priorities, projects, and implementation strategies for RSTI development.",
+      description:
+        "A 3–4 year directional policy framework defining priorities, projects, and implementation strategies for RSTI development.",
       icon: Target,
       color: "bg-ncrst-blue",
-      link: "/about#rsti-programme"
+      link: "/about#rsti-programme",
     },
     {
       title: "Biotechnology",
-      description: "Advanced biotechnology research and applications for agriculture, health, and environmental solutions.",
+      description:
+        "Advanced biotechnology research and applications for agriculture, health, and environmental solutions.",
       icon: Microscope,
       color: "bg-ncrst-green",
-      link: "/technology#biotech"
+      link: "/technology#biotech",
     },
     {
       title: "Innovation & Industrial Research",
-      description: "Promoting innovation-driven industrial development and technology commercialization.",
+      description:
+        "Promoting innovation-driven industrial development and technology commercialization.",
       icon: Lightbulb,
       color: "bg-ncrst-gold",
-      link: "/innovation"
+      link: "/innovation",
     },
     {
       title: "Natural Sciences Research",
-      description: "Fundamental and applied research in physics, chemistry, earth sciences, and environmental studies.",
+      description:
+        "Fundamental and applied research in physics, chemistry, earth sciences, and environmental studies.",
       icon: Globe,
       color: "bg-ncrst-grey",
-      link: "/research#natural-sciences"
+      link: "/research#natural-sciences",
     },
     {
       title: "Social Science Research",
-      description: "Research addressing social, economic, and cultural challenges for sustainable development.",
+      description:
+        "Research addressing social, economic, and cultural challenges for sustainable development.",
       icon: Users,
       color: "bg-purple-600",
-      link: "/research#social-sciences"
+      link: "/research#social-sciences",
     },
     {
       title: "Smart Partnerships",
-      description: "Strategic collaborations with academia, industry, and international organizations.",
+      description:
+        "Strategic collaborations with academia, industry, and international organizations.",
       icon: BookOpen,
       color: "bg-indigo-600",
-      link: "/about#partnerships"
-    }
+      link: "/about#partnerships",
+    },
   ];
 
   const latestNews = [
@@ -91,28 +115,31 @@ const Home: React.FC = () => {
       title: "BOOSTUP 2025 Applications Now Open",
       date: "January 15, 2025",
       category: "Innovation",
-      summary: "Apply for the largest innovation challenge in Namibia with prizes up to N$500,000"
+      summary:
+        "Apply for the largest innovation challenge in Namibia with prizes up to N$500,000",
     },
     {
       title: "National Science Fair Registration Extended",
       date: "January 12, 2025",
       category: "Science",
-      summary: "Extended deadline for schools to register for the annual National Science Fair"
+      summary:
+        "Extended deadline for schools to register for the annual National Science Fair",
     },
     {
       title: "New AI Research Collaboration with University",
       date: "January 10, 2025",
       category: "Technology",
-      summary: "NCRST partners with local universities to establish AI research centers"
-    }
+      summary:
+        "NCRST partners with local universities to establish AI research centers",
+    },
   ];
 
   const handleGetStartedClick = () => {
-    const pillarsSection = document.getElementById('strategic-pillars');
+    const pillarsSection = document.getElementById("strategic-pillars");
     if (pillarsSection) {
-      pillarsSection.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
+      pillarsSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
       });
     }
   };
@@ -125,12 +152,17 @@ const Home: React.FC = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-heading">
-              Research, Science, Technology and Innovation for 
-              <span className="block text-ncrst-gold">Namibia's Development Aspirations.</span>
+              Research, Science, Technology and Innovation for
+              <span className="block text-ncrst-gold">
+                Namibia's Development Aspirations.
+              </span>
             </h1>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-7 mb-8 max-w-4xl mx-auto">
               <p className="text-lg md:text-xl leading-body opacity-95">
-                The National Commission on Research, Science and Technology (NCRST) is a statutory body promoting coordination and development of Research, Science, Technology and Innovation in Namibia.
+                The National Commission on Research, Science and Technology
+                (NCRST) is a statutory body promoting coordination and
+                development of Research, Science, Technology and Innovation in
+                Namibia.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -156,12 +188,16 @@ const Home: React.FC = () => {
       <section id="strategic-pillars" className="py-16 bg-ncrst-grey-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-ncrst-grey mb-4 leading-heading">Our Strategic Pillars</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-ncrst-grey mb-4 leading-heading">
+              Our Strategic Pillars
+            </h2>
             <p className="text-lg text-ncrst-grey-dark max-w-3xl mx-auto leading-body">
-              These pillars guide NCRST's efforts to develop a knowledge-based society and contribute to Namibia's long-term socio-economic prosperity.
+              These pillars guide NCRST's efforts to develop a knowledge-based
+              society and contribute to Namibia's long-term socio-economic
+              prosperity.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {strategicPillars.map((pillar, index) => {
               const IconComponent = pillar.icon;
@@ -173,10 +209,14 @@ const Home: React.FC = () => {
                 >
                   <div className={`${pillar.color} p-6 text-white`}>
                     <IconComponent size={40} className="mb-3" />
-                    <h3 className="text-lg font-bold leading-heading">{pillar.title}</h3>
+                    <h3 className="text-lg font-bold leading-heading">
+                      {pillar.title}
+                    </h3>
                   </div>
                   <div className="p-4">
-                    <p className="text-ncrst-grey-dark text-sm leading-body mb-4">{pillar.description}</p>
+                    <p className="text-ncrst-grey-dark text-sm leading-body mb-4">
+                      {pillar.description}
+                    </p>
                     <div className="flex items-center text-ncrst-blue font-semibold text-sm">
                       <span>Learn More</span>
                       <ArrowRight size={14} className="ml-2" />
@@ -193,25 +233,36 @@ const Home: React.FC = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-ncrst-grey mb-4 leading-heading">Priority Programmes</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-ncrst-grey mb-4 leading-heading">
+              Priority Programmes
+            </h2>
             <p className="text-lg text-ncrst-grey-dark max-w-3xl mx-auto leading-body">
-              The National Programme on Research, Science, Technology and Innovation (RSTI) outlines strategic areas that drive progress and innovation across Namibia.
+              The National Programme on Research, Science, Technology and
+              Innovation (RSTI) outlines strategic areas that drive progress and
+              innovation across Namibia.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {priorityPrograms.map((program, index) => {
               const IconComponent = program.icon;
               return (
-                <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <div
+                  key={index}
+                  className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                >
                   <div className={`${program.color} p-6 text-white`}>
                     <div className="flex items-center space-x-3 mb-3">
                       <IconComponent size={28} />
-                      <h3 className="text-lg font-bold leading-heading">{program.title}</h3>
+                      <h3 className="text-lg font-bold leading-heading">
+                        {program.title}
+                      </h3>
                     </div>
                   </div>
                   <div className="p-6">
-                    <p className="text-ncrst-grey-dark leading-body mb-4">{program.description}</p>
+                    <p className="text-ncrst-grey-dark leading-body mb-4">
+                      {program.description}
+                    </p>
                     <Link
                       to={program.link}
                       className="inline-flex items-center space-x-2 text-ncrst-blue hover:text-ncrst-green transition-colors font-medium"
@@ -232,8 +283,12 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center mb-12">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-ncrst-grey mb-4 leading-heading">Latest News & Events</h2>
-              <p className="text-lg text-ncrst-grey-dark leading-body">Stay updated with the latest developments</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-ncrst-grey mb-4 leading-heading">
+                Latest News & Events
+              </h2>
+              <p className="text-lg text-ncrst-grey-dark leading-body">
+                Stay updated with the latest developments
+              </p>
             </div>
             <Link
               to="/news"
@@ -243,10 +298,13 @@ const Home: React.FC = () => {
               <ArrowRight size={16} />
             </Link>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {latestNews.map((news, index) => (
-              <article key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <article
+                key={index}
+                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+              >
                 <div className="p-6">
                   <div className="flex items-center space-x-2 mb-3">
                     <span className="bg-ncrst-blue/10 text-ncrst-blue px-2 py-1 rounded text-xs font-medium">
@@ -257,8 +315,12 @@ const Home: React.FC = () => {
                       {news.date}
                     </div>
                   </div>
-                  <h3 className="text-lg font-bold text-ncrst-grey mb-3 leading-heading">{news.title}</h3>
-                  <p className="text-ncrst-grey-dark text-sm leading-body">{news.summary}</p>
+                  <h3 className="text-lg font-bold text-ncrst-grey mb-3 leading-heading">
+                    {news.title}
+                  </h3>
+                  <p className="text-ncrst-grey-dark text-sm leading-body">
+                    {news.summary}
+                  </p>
                 </div>
               </article>
             ))}
@@ -267,30 +329,44 @@ const Home: React.FC = () => {
       </section>
 
       {/* Statistics Dashboard */}
-      <section id="impact-statistics" className="py-16 bg-ncrst-blue text-white">
+      <section
+        id="impact-statistics"
+        className="py-16 bg-ncrst-blue text-white"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-heading">Our Impact</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-heading">
+              Our Impact
+            </h2>
             <p className="text-lg opacity-90 max-w-2xl mx-auto leading-body">
-              Real-time data showcasing NCRST's contribution to Namibian research and innovation.
+              Real-time data showcasing NCRST's contribution to Namibian
+              research and innovation.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-ncrst-gold mb-2">245</div>
+              <div className="text-4xl md:text-5xl font-bold text-ncrst-gold mb-2">
+                245
+              </div>
               <div className="text-sm opacity-90">Active Research Projects</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-ncrst-gold mb-2">N$12.5M</div>
+              <div className="text-4xl md:text-5xl font-bold text-ncrst-gold mb-2">
+                N$12.5M
+              </div>
               <div className="text-sm opacity-90">Grants Awarded (2024)</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-ncrst-gold mb-2">89</div>
+              <div className="text-4xl md:text-5xl font-bold text-ncrst-gold mb-2">
+                89
+              </div>
               <div className="text-sm opacity-90">Innovation Startups</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-ncrst-gold mb-2">156</div>
+              <div className="text-4xl md:text-5xl font-bold text-ncrst-gold mb-2">
+                156
+              </div>
               <div className="text-sm opacity-90">Registered Institutes</div>
             </div>
           </div>
