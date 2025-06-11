@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Rocket,
   Target,
@@ -15,6 +16,8 @@ import {
 } from "lucide-react";
 
 const Innovation: React.FC = () => {
+  const navigate = useNavigate();
+
   const challenges = [
     {
       name: "BOOSTUP Challenge",
@@ -72,242 +75,6 @@ const Innovation: React.FC = () => {
       impact:
         "Reducing period poverty in Namibia, decreasing school absenteeism, and providing eco-friendly menstrual solutions",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Vaughan Weiss",
-      company: "Wision Media and Drafting",
-      sector: "Visual Communication & Immersive Technology",
-      innovation:
-        "3D rendering, animation and VR solutions to transform complex ideas into clear visual communications",
-      impact:
-        "Enhancing brand awareness, investor attraction and customer acquisition through cutting-edge visual storytelling",
-      funding: "BOOST-UP programme",
-      image:
-        "https://scontent.fers4-1.fna.fbcdn.net/v/t39.30808-6/480271760_1570729174329722_1139182505980930790_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=s3u4iZ69_xUQ7kNvwGdzXew&_nc_oc=Adn8ypogsZJ8IwbL-4enlZC7mCTBwJe9h2zlLyNLvQDlXw1aHqZpKXufmQ5ArYrVYHk&_nc_zt=23&_nc_ht=scontent.fers4-1.fna&_nc_gid=eXAKZXYrzWc-OtuhiSOgJw&oh=00_AfMNI8HFdmEBNfr1gOWd0Ne0M8dRN0df-S0PA7NRx8lOBQ&oe=684F2BBD",
-    },
-    {
-      name: "Haita Ester",
-      company: "Nzimbu Investment CC",
-      sector: "Organic Food Production & Health",
-      innovation:
-        "Pure organic juices, jams, tea, and oil made from indigenous Namibian ingredients (Nongongo fruits, Mutete vegetables)",
-      impact:
-        "Promoting health through local organic products while preserving traditional food knowledge",
-      funding: "NICW programme",
-      image:
-        "https://scontent.fers4-1.fna.fbcdn.net/v/t39.30808-6/489952016_1176531004259108_8979381946798009155_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=nJOye_WZi5AQ7kNvwHtWOW7&_nc_oc=Adn7wv-1SlOR-BlprmGn6v6Jp9exjTKGxu_96iY5_sqaMXhkRCkFKqCQLHkrQORc5BI&_nc_zt=23&_nc_ht=scontent.fers4-1.fna&_nc_gid=fbKv1RazPZ8Y5QDpSi9BjA&oh=00_AfNHfQ6tQK9LPRQ-bL6Vp4c30N9_A6MfyfFNW_1iwrchzg&oe=684F0235",
-    },
-    {
-      name: "Dankie Nendongo",
-      company: "Leo Canopus Inc",
-      sector: "Digital Infrastructure & Connectivity Solutions",
-      innovation:
-        "Free community Wi-Fi solutions revolutionizing internet access deployment in underserved areas",
-      impact:
-        "Closing Africa's digital divide - targeting the 40% of continent without internet access",
-      funding: "BOOST-UP programme",
-      image:
-        "https://media.licdn.com/dms/image/v2/C4D03AQFbbr5sI_AWsQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1640990216019?e=1755129600&v=beta&t=t4WgTRQD5r0QgMLBfr2mah7V2kixVSSARTPhuUVOsa8",
-    },
-    {
-      name: "Jesse Liula Schiceya",
-      company: "Patient Care",
-      sector: "Healthcare Technology",
-      innovation: "Telemedicine and healthcare insurance platform",
-      impact: "Provides accessible healthcare services and insurance",
-      funding: "BOOST-UP programme",
-      image:
-        "https://media.licdn.com/dms/image/v2/D4D03AQEDfYQCcVls3A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720142406873?e=1755129600&v=beta&t=fou3taCeIsGvab1Tz8nvbWeK7WlDliWSe4G7NU6altk",
-    },
-    {
-      name: "Stacey Likando",
-      company: "THANK-YOU WALLET",
-      sector: "Technology",
-      innovation: "Community empowerment through direct payments",
-      impact: "Enables seamless payments to stores and service stations",
-      funding: "BOOST-UP programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Roswitha Matheus",
-      company: "Green kitchen's Tech",
-      sector: "Clean Energy",
-      innovation: "Manufacturing clean cook stoves",
-      impact: "Provides clean cooking solutions and promotes green energy",
-      funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Akuumba Andrias",
-      company: "Kaskola",
-      sector: "Digital Marketing",
-      innovation: "Digitalization of the Namibian Nomad Visa",
-      impact: "Helps market and digitalize visa processes",
-      funding: "BOOST-UP programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Wilbard Lazarus",
-      company: "Okaluli (by Ausgezeichnet Technische)",
-      sector: "Education Technology",
-      innovation: "Empowering students in Sub-Saharan Africa",
-      impact: "Provides accessible education solutions",
-      funding: "BOOST-UP programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Andreas Elifas",
-      company: "Jumper Namibia",
-      sector: "Creative Agency",
-      innovation: "Innovative design, VR experiences, and visual communication",
-      impact: "Delivers impactful creative solutions",
-      funding: "BOOST-UP programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Cecilia Naule",
-      company: "Rural Power Solutions CC",
-      sector: "Renewable Energy",
-      innovation: "Solar cooking energy solutions",
-      impact: "Provides energy access to people with limited electricity",
-      funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Diana Nakwenye-Nakuumba",
-      company: "DN-NAK Investment CC",
-      sector: "Food Processing",
-      innovation: "Nutritional food products (e.g., jam, juice, chutney)",
-      impact: "Adds value to local produce and promotes healthy eating",
-      funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Loide Dawid",
-      company: "K-12 EdTech Inc.",
-      sector: "Education Technology",
-      innovation: "Virtual teaching robots and digitized learning",
-      impact: "Streamlines and automates education for students",
-      funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Selma Matheus",
-      company: "Kalahari Truffles (Pty) Ltd",
-      sector: "Agriculture & Food",
-      innovation: "Farming and supply of Kalahari truffles",
-      impact: "Expands market for Namibian truffles beyond Africa",
-      funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Saarty Mikka",
-      company: "Kernytic Investments CC",
-      sector: "Interior Design",
-      innovation: "Interior Design",
-      impact: "Enables seamless payments to s",
-      funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Eiretha-Cynthia Rukira-Veiko",
-      company: "Oilonga-Media CC",
-      sector: "Media & Procurement",
-      innovation: "Innovative solutions for procurement challenges",
-      impact: "Supports bidders and buyers in the procurement market",
-      funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Anna-Liisa Hatutale",
-      company: "Landu Fish Spreads",
-      sector: "Food Processing",
-      innovation: "Value-added fish products (e.g., fish spreads)",
-      impact: "Enhances utilization of horse mackerel and reduces waste",
-      funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Kristofine Ekandjo",
-      company: "Tulande Online",
-      sector: "E-Commerce",
-      innovation: "Online platform for digital trade",
-      impact: "Expands market access for vendors and buyers",
-      funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Matjita Hengua",
-      company: "Otjisajiena Farming",
-      sector: "Agriculture",
-      innovation: "Home gardening and homemade jams",
-      impact: "Promotes local food production and self-sufficiency",
-      funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Maria Shipapo",
-      company: "MIST Agricultural Laboratory",
-      sector: "Agri-Tech",
-      innovation: "Agricultural laboratory services",
-      impact: "Agricultural laboratory services",
-      funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Ndinelago Illeka",
-      company: "Granny's Green Garden",
-      sector: "Agriculture",
-      innovation: "Local farming and produce",
-      impact: "Promotes sustainable gardening practices",
-      funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Lydia Ndinelao Horn",
-      company: "Namibia Institute of Seeds",
-      sector: "Agriculture",
-      innovation: "Seed production and distribution",
-      impact: "Enhances agricultural productivity with quality seeds",
-      funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Ndapewa Treresius",
-      company: "Possible Trading cc",
-      sector: "Disability Tech",
-      innovation: "Software for visually and hearing-impaired communities",
-      impact:
-        "Improves accessibility and quality of life for persons with disabilities",
-      funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Twahafffwa Izaloo Nambuwa",
-      company: "Petwa Medical Practice",
-      sector: "Healthcare",
-      innovation: "Medical-grade topical products for skin conditions",
-      impact: "Provides solutions for acne and pigmentation issues",
-      funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Helaria Shuudeni",
-      company: "VIBERA INVESTMENTS CC",
-      sector: "Body Care",
-      innovation: "Natural and moisturizing body care products",
-      impact: "Offers spunny and sustainable personal care solutions",
-      funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "Octavius Maketo",
-      company: "Ubuntu Aquatic CC",
-      sector: "Sustainable Agriculture",
-      innovation: "Integration of aquaculture and hydroponics",
-      impact: "Addresses waste disposal and promotes sustainability",
-      funding: "BOOST-UP programme",
       image: "https://lasanitarym.com/img/blog3.jpg",
     },
   ];
@@ -794,6 +561,14 @@ const Innovation: React.FC = () => {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-6">
+            <button
+              className="bg-ncrst-blue text-white px-6 py-3 rounded-lg font-semibold hover:bg-ncrst-blue/90 transition-colors"
+              onClick={() => navigate("/innovation/innovators-hub")}
+            >
+              View All Innovators
+            </button>
           </div>
         </div>
       </section>
