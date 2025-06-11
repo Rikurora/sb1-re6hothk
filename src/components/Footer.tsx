@@ -10,11 +10,11 @@ const Footer: React.FC = () => {
           {/* About NCRST */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src="/image.png" 
-                alt="NCRST Logo" 
-                className="w-10 h-10 object-contain"
-              />
+               <img 
+              src="/NCRST.png" 
+              alt="NCRST Logo" 
+              className="w-12 h-12 object-contain"
+            />
               <div>
                 <h3 className="text-lg font-bold">NCRST</h3>
               </div>
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">Online Portals</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-gray-300 hover:text-ncrst-gold transition-colors flex items-center space-x-1">
+                <a href="https://gms.ncrst.na/" className="text-gray-300 hover:text-ncrst-gold transition-colors flex items-center space-x-1">
                   <span>Grants Management System</span>
                   <ExternalLink size={14} />
                 </a>
@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="#" className="text-gray-300 hover:text-ncrst-gold transition-colors flex items-center space-x-1">
-                  <span>Institute Registration</span>
+                  <span>Research Institute Registration</span>
                   <ExternalLink size={14} />
                 </a>
               </li>
