@@ -14,7 +14,7 @@ const Header: React.FC = () => {
       name: 'About Us', 
       href: '/about',
       dropdown: [
-        { name: 'CEO\'s Forward', href: '/about#ceo-forward' },
+        { name: 'CEO\'s Foreword', href: '/about#ceo-forward' },
         { name: 'Board of Commissioners', href: '/about#board' },
         { name: 'Councils', href: '/about#councils' },
         { name: 'Legislation', href: '/about#legislation' },
