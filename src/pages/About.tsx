@@ -125,7 +125,7 @@ const About: React.FC = () => {
             </div>
             
             <div className="lg:col-span-2">
-              <h2 className="text-3xl font-bold text-ncrst-grey mb-6 leading-heading">CEO's Forward</h2>
+              <h2 className="text-3xl font-bold text-ncrst-grey mb-6 leading-heading">CEO's Foreword</h2>
               <div className="space-y-6 text-ncrst-grey-dark leading-body">
                 <div>
                   <h3 className="text-xl font-semibold text-ncrst-grey mb-3">NCRST Mandate</h3>
@@ -269,10 +269,25 @@ const About: React.FC = () => {
               <div className="w-1 h-12 bg-ncrst-grey mx-auto"></div>
               <div className="w-0 h-0 border-l-4 border-r-4 border-t-8 border-l-transparent border-r-transparent border-t-ncrst-grey mx-auto"></div>
             </div>
+             <div className="text-center mb-8">
+              <div className="bg-ncrst-blue text-white px-8 py-4 rounded-lg inline-block mb-4">
+                <h3 className="font-bold text-lg leading-heading">Chief Executive Officer</h3>
+              </div>
+            </div>
+
             
+            
+                
+            {/* Arrow Down */}
+            <div className="text-center mb-8">
+              <div className="w-1 h-12 bg-ncrst-grey mx-auto"></div>
+              <div className="w-0 h-0 border-l-4 border-r-4 border-t-8 border-l-transparent border-r-transparent border-t-ncrst-grey mx-auto"></div>
+            </div>
+
             {/* General Managers */}
             <div className="text-center">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          
                 <div className="bg-ncrst-gold text-ncrst-grey px-6 py-4 rounded-lg">
                   <h4 className="font-bold text-lg leading-heading">General Manager</h4>
                   <p className="text-sm font-medium mt-1">BSS</p>
