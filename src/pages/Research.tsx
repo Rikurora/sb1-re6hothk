@@ -107,7 +107,7 @@ const Research: React.FC = () => {
               { id: 'grants', label: 'Research Grants' },
               { id: 'calls', label: 'Open Calls' },
               { id: 'permits', label: 'Research Permits' },
-              { id: 'registration', label: 'Institute Registration' },
+              { id: 'registration', label: 'Research Institute Registration' },
               { id: 'symposium', label: 'Research Symposium' }
             ].map((tab) => (
               <button
