@@ -125,10 +125,10 @@ const Home: React.FC = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-heading">
-              Advancing Namibia Through
-              <span className="block text-ncrst-gold">Science & Innovation</span>
+              Research, Science, Technology and Innovation for 
+              <span className="block text-ncrst-gold">Namibia's Development Aspirations.</span>
             </h1>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 max-w-4xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-7 mb-8 max-w-4xl mx-auto">
               <p className="text-lg md:text-xl leading-body opacity-95">
                 The National Commission on Research, Science and Technology (NCRST) is a statutory body promoting coordination and development of Research, Science, Technology and Innovation in Namibia.
               </p>
@@ -136,7 +136,7 @@ const Home: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button
                 onClick={handleGetStartedClick}
-                className="bg-ncrst-gold text-ncrst-grey px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-all transform hover:scale-105 flex items-center space-x-2 shadow-lg"
+                className="bg-ncrst-gold text-ncrst-grey px-6 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-all transform hover:scale-105 flex items-center space-x-2 shadow-lg"
               >
                 <span>Get Started</span>
                 <ChevronDown size={20} className="animate-bounce" />

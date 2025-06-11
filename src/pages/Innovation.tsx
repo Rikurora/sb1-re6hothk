@@ -6,19 +6,19 @@ const Innovation: React.FC = () => {
     {
       name: "BOOSTUP Challenge",
       description: "Namibia's flagship innovation competition supporting early-stage startups and entrepreneurs",
-      prize: "N$500,000",
-      participants: "200+ applications",
+      duration: "1 week annually",
+      participants: "14 Start Up's",
       categories: ["Technology", "Agriculture", "Health", "Environment"],
-      status: "Applications Open",
+      status: "Applications Closed",
       deadline: "March 31, 2025"
     },
     {
       name: "Scale-Up Namibia",
       description: "Growth acceleration program for established startups ready to scale their operations",
-      prize: "N$1,000,000",
-      participants: "50+ companies",
+      duration: "1 week anually",
+      participants: "50 companies",
       categories: ["Fintech", "Agritech", "Healthtech", "Cleantech"],
-      status: "Applications Open",
+      status: "Applications Closed",
       deadline: "April 15, 2025"
     }
   ];
@@ -103,7 +103,7 @@ const Innovation: React.FC = () => {
       name: "Universities",
       count: "4",
       description: "Academic institutions driving research and student entrepreneurship",
-      examples: ["UNAM", "NUST", "IUM", "University of Namibia"]
+      examples: ["UNAM", "NUST", "IUM"]
     }
   ];
 
@@ -143,14 +143,14 @@ const Innovation: React.FC = () => {
                 </div>
                 
                 <div className="p-6">
-                  <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="grid grid-cols-2 gap-6 mb-7">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-ncrst-green">{challenge.prize}</div>
-                      <div className="text-sm text-ncrst-grey-dark">Total Prize Pool</div>
+                      <div className="text-2xl font-bold text-ncrst-green">{challenge.participants}</div>
+                      <div className="text-sm text-ncrst-grey-dark">Expected Applications</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-ncrst-blue">{challenge.participants}</div>
-                      <div className="text-sm text-ncrst-grey-dark">Expected Applications</div>
+                      <div className="text-2xl font-bold text-ncrst-blue">{challenge.duration}</div>
+                      <div className="text-sm text-ncrst-grey-dark">duration</div>
                     </div>
                   </div>
 
@@ -169,7 +169,7 @@ const Innovation: React.FC = () => {
                     <div className="flex items-center justify-between">
                       <div>
                         <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                          challenge.status === 'Applications Open' 
+                          challenge.status === 'Applications Closed' 
                             ? 'bg-green-100 text-green-800' 
                             : 'bg-gray-100 text-gray-800'
                         }`}>
