@@ -142,6 +142,7 @@ const SpaceScienceCoun: React.FC = () => {
             <div>
               <h2 className="text-3xl font-bold text-ncrst-grey mb-6 leading-heading">Our Mission</h2>
               <div className="space-y-4 text-ncrst-grey-dark leading-body">
+                /*jsssss**/
                 <p>
                   The National Space Science Council provides strategic guidance and oversight for Namibia's space science initiatives, satellite technology development, and astronomical research programs.
                 </p>
