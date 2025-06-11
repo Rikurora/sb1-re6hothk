@@ -6,8 +6,8 @@ const Technology: React.FC = () => {
     {
       title: "AI Research & Development",
       description: "Collaborative research projects focusing on machine learning applications for Namibian challenges",
-      participants: "45+ researchers",
-      projects: "12 active projects"
+      participants: "40+ researchers",
+      projects: "1 active projects"
     },
     {
       title: "AI Education & Training",
@@ -18,29 +18,29 @@ const Technology: React.FC = () => {
     {
       title: "AI for Development",
       description: "Applying AI solutions to agriculture, healthcare, and environmental monitoring",
-      participants: "8 partner organizations",
-      projects: "5 pilot projects"
+      participants: "0 partner organizations",
+      projects: "1 pilot projects"
     }
   ];
 
   const biotechLabs = [
     {
       name: "Molecular Biology Laboratory",
-      location: "NCRST Windhoek Campus",
+      location: "",
       services: ["DNA Analysis", "PCR Testing", "Genetic Sequencing"],
       equipment: "State-of-the-art molecular analysis equipment",
       certification: "ISO 17025 Accredited"
     },
     {
       name: "Biosafety Testing Facility",
-      location: "NCRST Windhoek Campus",
+      location: "",
       services: ["GMO Detection", "Risk Assessment", "Environmental Testing"],
       equipment: "Advanced biosafety containment systems",
       certification: "International Standards Compliant"
     },
     {
       name: "Microbiology Laboratory",
-      location: "NCRST Windhoek Campus",
+      location: "",
       services: ["Pathogen Detection", "Food Safety Testing", "Water Quality Analysis"],
       equipment: "Modern microbiological analysis tools",
       certification: "WHO Guidelines Compliant"
@@ -105,16 +105,16 @@ const Technology: React.FC = () => {
                 </p>
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div>
-                    <div className="text-2xl font-bold text-ncrst-gold">45+</div>
+                    <div className="text-2xl font-bold text-ncrst-gold">40+</div>
                     <div className="text-sm opacity-90">Members</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-ncrst-gold">17</div>
+                    <div className="text-2xl font-bold text-ncrst-gold">1</div>
                     <div className="text-sm opacity-90">Projects</div>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-ncrst-gold">8</div>
-                    <div className="text-sm opacity-90">Partners</div>
+                    <div className="text-sm opacity-90">Affilaitions</div>
                   </div>
                 </div>
               </div>

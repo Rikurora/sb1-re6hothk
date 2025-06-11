@@ -8,7 +8,7 @@ const Science: React.FC = () => {
       description: "Namibia's premier science competition showcasing student innovation and scientific excellence across all regions.",
       icon: Trophy,
       color: "bg-ncrst-blue",
-      stats: { participants: "2,340 students", schools: "156 schools", projects: "890 projects" },
+      stats: { participants: "134 students", schools: "60 schools", projects: "134 projects" },
       link: "#fair"
     },
     {
@@ -16,7 +16,7 @@ const Science: React.FC = () => {
       description: "National competition promoting mathematical excellence and problem-solving skills among high school students.",
       icon: Target,
       color: "bg-ncrst-green",
-      stats: { participants: "450+ students", regions: "All 14 regions", levels: "3 competition levels" },
+      stats: { participants: "2744 students", regions: "All 14 regions", levels: "3 competition levels" },
       link: "#nmo"
     },
     {
@@ -24,12 +24,12 @@ const Science: React.FC = () => {
       description: "Interactive competition testing scientific knowledge and encouraging STEM learning among young Namibians.",
       icon: Brain,
       color: "bg-ncrst-gold",
-      stats: { participants: "320+ students", schools: "80+ schools", subjects: "5 science subjects" },
+      stats: { participants: "27 students", schools: " schools", subjects: "5 science subjects" },
       link: "#quiz"
     },
     {
-      title: "STEM Gender Programmes",
-      description: "Initiatives promoting gender balance and leadership in Science, Technology, Engineering, and Mathematics fields.",
+      title: "STEM Programmes",
+      description: "This initiative provides a unique platform to build practical skills, test scientific knowledge and showcase talents in STEM.",
       icon: Users,
       color: "bg-ncrst-grey",
       stats: { beneficiaries: "4,300+ students", programs: "Mr. & Mrs. STEM", impact: "Gender equality focus" },
@@ -40,7 +40,7 @@ const Science: React.FC = () => {
       description: "Annual celebration of scientific achievements with workshops, exhibitions, and public engagement activities.",
       icon: Star,
       color: "bg-purple-600",
-      stats: { duration: "1 week annually", events: "50+ activities", reach: "National coverage" },
+      stats: { duration: "1 week annually", events: "7 activities", reach: "National coverage" },
       link: "#science-week"
     },
     {
@@ -48,7 +48,7 @@ const Science: React.FC = () => {
       description: "Celebrating space science and astronomy, inspiring curiosity about the universe and Namibia's dark skies.",
       icon: Microscope,
       color: "bg-indigo-600",
-      stats: { duration: "October 4-10", activities: "Stargazing events", participants: "5,000+ people" },
+      stats: { duration: "1 week annually", activities: "Stargazing events", participants: "5,000+ people" },
       link: "#space"
     }
   ];
@@ -77,7 +77,7 @@ const Science: React.FC = () => {
     },
     {
       title: "Space Science Week",
-      date: "October 4-10, 2025",
+      date: "October 6-10, 2025",
       location: "Nationwide",
       category: "Space Science",
       description: "Annual celebration of space science with public stargazing events"
