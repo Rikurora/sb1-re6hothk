@@ -14,30 +14,45 @@ const BiosafetyCoun: React.FC = () => {
     {
       name: "Prof. Dr. Martha Kandawa-Schulz",
       role: "Chairperson",
+
+      expertise: "",
+      institution: "",
     },
     {
       name: "Ms Priska Naimhwaka",
       role: "Member",
+      expertise: "",
+      institution: "",
     },
     {
       name: "Ms Victoria Weyulu",
       role: "Member",
+      expertise: "",
+      institution: "",
     },
     {
       name: "Mr Salomon Tsanigab",
       role: "Member",
+      expertise: "",
+      institution: "",
     },
     {
       name: "Dr Milton Maseke",
       role: "Member",
+      expertise: "",
+      institution: "",
     },
     {
       name: "Dr Natasha Cheikhyoussef",
       role: "Member",
+      expertise: "",
+      institution: "",
     },
     {
       name: "Mr Moses Moses",
       role: "Member",
+      expertise: "",
+      institution: "",
     },
   ];
 

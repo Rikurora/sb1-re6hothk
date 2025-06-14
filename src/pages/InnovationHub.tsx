@@ -109,7 +109,7 @@ const Innovation: React.FC = () => {
       innovation: "Digitalization of the Namibian Nomad Visa",
       impact: "Helps market and digitalize visa processes",
       funding: "BOOST-UP programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/Andrias.jpeg",
     },
     {
       name: "Wilbard Lazarus",
@@ -118,7 +118,7 @@ const Innovation: React.FC = () => {
       innovation: "Empowering students in Sub-Saharan Africa",
       impact: "Provides accessible education solutions",
       funding: "BOOST-UP programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/lazarus.jpeg",
     },
     {
       name: "Andreas Elifas",
@@ -127,7 +127,7 @@ const Innovation: React.FC = () => {
       innovation: "Innovative design, VR experiences, and visual communication",
       impact: "Delivers impactful creative solutions",
       funding: "BOOST-UP programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/elifas.jpeg",
     },
     {
       name: "Cecilia Naule",
@@ -136,7 +136,7 @@ const Innovation: React.FC = () => {
       innovation: "Solar cooking energy solutions",
       impact: "Provides energy access to people with limited electricity",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/cecilia.jpeg",
     },
     {
       name: "Diana Nakwenye-Nakuumba",
@@ -145,7 +145,7 @@ const Innovation: React.FC = () => {
       innovation: "Nutritional food products (e.g., jam, juice, chutney)",
       impact: "Adds value to local produce and promotes healthy eating",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/diana.jpeg",
     },
     {
       name: "Loide Dawid",
@@ -154,7 +154,7 @@ const Innovation: React.FC = () => {
       innovation: "Virtual teaching robots and digitized learning",
       impact: "Streamlines and automates education for students",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/loide.jpeg",
     },
     {
       name: "Selma Matheus",
@@ -163,7 +163,7 @@ const Innovation: React.FC = () => {
       innovation: "Farming and supply of Kalahari truffles",
       impact: "Expands market for Namibian truffles beyond Africa",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/selma.jpeg",
     },
     {
       name: "Saarty Mikka",
@@ -172,7 +172,7 @@ const Innovation: React.FC = () => {
       innovation: "Interior Design",
       impact: "Enables seamless payments to s",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/saarty.jpeg",
     },
     {
       name: "Eiretha-Cynthia Rukira-Veiko",
@@ -181,7 +181,7 @@ const Innovation: React.FC = () => {
       innovation: "Innovative solutions for procurement challenges",
       impact: "Supports bidders and buyers in the procurement market",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/elretha.jpeg",
     },
     {
       name: "Anna-Liisa Hatutale",
@@ -190,7 +190,7 @@ const Innovation: React.FC = () => {
       innovation: "Value-added fish products (e.g., fish spreads)",
       impact: "Enhances utilization of horse mackerel and reduces waste",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/anna.jpeg",
     },
     {
       name: "Kristofine Ekandjo",
@@ -199,7 +199,7 @@ const Innovation: React.FC = () => {
       innovation: "Online platform for digital trade",
       impact: "Expands market access for vendors and buyers",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/kristofine.jpeg",
     },
     {
       name: "Matjita Hengua",
@@ -208,7 +208,7 @@ const Innovation: React.FC = () => {
       innovation: "Home gardening and homemade jams",
       impact: "Promotes local food production and self-sufficiency",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/hengua.jpeg",
     },
     {
       name: "Maria Shipapo",
@@ -217,7 +217,7 @@ const Innovation: React.FC = () => {
       innovation: "Agricultural laboratory services",
       impact: "Agricultural laboratory services",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/maria.jpeg",
     },
     {
       name: "Ndinelago Illeka",
@@ -226,7 +226,7 @@ const Innovation: React.FC = () => {
       innovation: "Local farming and produce",
       impact: "Promotes sustainable gardening practices",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/lilekela.jpeg",//
     },
     {
       name: "Lydia Ndinelao Horn",
@@ -235,7 +235,7 @@ const Innovation: React.FC = () => {
       innovation: "Seed production and distribution",
       impact: "Enhances agricultural productivity with quality seeds",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/lydia.jpeg",
     },
     {
       name: "Ndapewa Treresius",
@@ -245,7 +245,7 @@ const Innovation: React.FC = () => {
       impact:
         "Improves accessibility and quality of life for persons with disabilities",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "https://lasanitarym.com/img/blog3.jpg",//
     },
     {
       name: "Twahafffwa Izaloo Nambuwa",
@@ -254,7 +254,7 @@ const Innovation: React.FC = () => {
       innovation: "Medical-grade topical products for skin conditions",
       impact: "Provides solutions for acne and pigmentation issues",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/nambuwa.jpeg",
     },
     {
       name: "Helaria Shuudeni",
@@ -263,7 +263,7 @@ const Innovation: React.FC = () => {
       innovation: "Natural and moisturizing body care products",
       impact: "Offers spunny and sustainable personal care solutions",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/helaria.jpeg",
     },
     {
       name: "Octavius Maketo",
@@ -272,7 +272,7 @@ const Innovation: React.FC = () => {
       innovation: "Integration of aquaculture and hydroponics",
       impact: "Addresses waste disposal and promotes sustainability",
       funding: "BOOST-UP programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "/maketo.jpeg",
     },
   ];
 
