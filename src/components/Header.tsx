@@ -28,7 +28,10 @@ const Header: React.FC = () => {
         { name: "Research Grants", href: "/research#grants" },
         { name: "Open Calls", href: "/research#calls" },
         { name: "Research Permits", href: "/research#permits" },
-        { name: "Research Institute Registration", href: "/research#registration" },
+        {
+          name: "Research Institute Registration",
+          href: "/research#registration",
+        },
         { name: "Research Symposium", href: "/research#symposium" },
       ],
     },
@@ -294,7 +297,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="lg:hidden border-t border-gray-200 py-4">
+          <nav className="lg:hidden border-t border-gray-200 py-4 max-h-[80vh] overflow-y-auto">
             {/* Mobile Search */}
             <div className="mb-4">
               <div className="relative">

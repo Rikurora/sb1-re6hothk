@@ -17,7 +17,6 @@ const BiosafetyCoun: React.FC = () => {
 
       expertise: "",
       institution: "",
-
     },
     {
       name: "Ms Priska Naimhwaka",
@@ -36,28 +35,24 @@ const BiosafetyCoun: React.FC = () => {
       role: "Member",
       expertise: "",
       institution: "",
-      
     },
     {
       name: "Dr Milton Maseke",
       role: "Member",
       expertise: "",
       institution: "",
-      
     },
     {
       name: "Dr Natasha Cheikhyoussef",
       role: "Member",
       expertise: "",
       institution: "",
-      
     },
     {
       name: "Mr Moses Moses",
       role: "Member",
       expertise: "",
       institution: "",
-      
     },
   ];
 
@@ -243,9 +238,9 @@ const BiosafetyCoun: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             <div className="bg-white border-2 border-gray-200 rounded-xl p-8">
               <div className="flex items-center space-x-3 mb-6">
-
-                <h3 className="text-2xl font-bold text-ncrst-grey leading-heading">Biosafety Act (2006)</h3>
-
+                <h3 className="text-2xl font-bold text-ncrst-grey leading-heading">
+                  Biosafety Act (2006)
+                </h3>
               </div>
               <div className="space-y-4">
                 <p className="text-ncrst-grey-dark leading-body">
