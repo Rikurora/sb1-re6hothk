@@ -208,7 +208,7 @@ const BiosafetyCoun: React.FC = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-ncrst-green text-white py-16 h-[300px] flex items-center justify-center">
+      <section className="relative bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white py-16 h-[300px] flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">
@@ -263,7 +263,7 @@ const BiosafetyCoun: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-ncrst-green text-white rounded-xl p-8">
+            <div className="bg-ncrst-grey text-white rounded-xl p-8">
               <h3 className="text-2xl font-bold mb-6 leading-heading">
                 Regulatory Principles
               </h3>
@@ -486,7 +486,7 @@ const BiosafetyCoun: React.FC = () => {
                 <div className="flex items-center justify-between text-xs text-ncrst-grey-dark mb-4">
                   <span>Size: {form.size}</span>
                 </div>
-                <button className="w-full bg-ncrst-green text-white py-2 rounded-lg font-medium hover:bg-ncrst-green/90 transition-colors flex items-center justify-center space-x-2">
+                <button className="w-full bg-ncrst-blue text-white py-2 rounded-lg font-medium hover:bg-ncrst-gold/90 transition-colors flex items-center justify-center space-x-2">
                   <Download size={16} />
                   <span>Download</span>
                 </button>
@@ -495,7 +495,7 @@ const BiosafetyCoun: React.FC = () => {
           </div>
 
           {/* Application Process Steps */}
-          <div className="bg-ncrst-blue text-white rounded-xl p-8">
+          <div className="bg-ncrst-grey text-white rounded-xl p-8">
             <h3 className="text-2xl font-bold mb-6 text-center leading-heading">
               Application Process
             </h3>
@@ -661,7 +661,7 @@ const BiosafetyCoun: React.FC = () => {
           </div>
 
           <div className="text-center mt-12">
-            <div className="bg-ncrst-green text-white rounded-xl p-8">
+            <div className="bg-ncrst-blue text-white rounded-xl p-8">
               <h3 className="text-xl font-bold mb-4 leading-heading">
                 Need More Information?
               </h3>
