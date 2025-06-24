@@ -78,7 +78,7 @@ const Research: React.FC = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-ncrst-green text-white py-16 h-[300px] flex items-center justify-center">
+      <section className="relative bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white py py-16 h-[300px] flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">
@@ -103,8 +103,8 @@ const Research: React.FC = () => {
                   key={index}
                   className="bg-white rounded-lg shadow-md p-6 text-center"
                 >
-                  <div className="bg-ncrst-green/10 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <IconComponent className="text-ncrst-green" size={24} />
+                  <div className="bg-ncrst-grey/10 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <IconComponent className="text-ncrst-blue" size={24} />
                   </div>
                   <div className="text-2xl font-bold text-ncrst-grey mb-1">
                     {stat.value}
@@ -135,7 +135,7 @@ const Research: React.FC = () => {
                 onClick={() => setActiveTab(tab.id)}
                 className={`px-6 py-3 rounded-lg font-medium transition-colors ${
                   activeTab === tab.id
-                    ? "bg-ncrst-green text-white"
+                    ? "bg-ncrst-blue text-white"
                     : "bg-gray-100 text-ncrst-grey hover:bg-gray-200"
                 }`}
               >
@@ -213,7 +213,7 @@ const Research: React.FC = () => {
                 </div>
               </div>
 
-              <div className="bg-ncrst-green text-white rounded-xl p-8">
+              <div className="bg-ncrst-grey text-white rounded-xl p-8">
                 <h3 className="text-2xl font-bold mb-4 leading-heading">
                   How to Apply
                 </h3>
@@ -267,7 +267,7 @@ const Research: React.FC = () => {
                 </div>
                 <a
                   href="https://gms.ncrst.na"
-                  className="inline-block bg-white text-ncrst-green px-6 py-3 rounded-lg font-semibold mt-6 hover:bg-gray-100 transition-colors"
+                  className="inline-block bg-ncrst-blue text-ncrst-white px-6 py-3 rounded-lg font-semibold mt-6 hover:bg-gray-100 transition-colors"
                 >
                   <span>Acess Grant Portal</span>
                 </a>
@@ -670,7 +670,7 @@ const Research: React.FC = () => {
                     <div className="text-2xl font-bold text-ncrst-gold">
                       500+
                     </div>
-                    <div className="text-sm">Expected Participants</div>
+                    <div className="text-sm">Expected Applications</div>
                   </div>
                 </div>
                 <button className="bg-ncrst-gold text-ncrst-grey px-8 py-3 rounded-lg font-semibold mt-6 hover:bg-yellow-300 transition-colors">
