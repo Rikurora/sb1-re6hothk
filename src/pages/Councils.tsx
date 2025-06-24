@@ -32,7 +32,7 @@ const Councils: React.FC = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-ncrst-blue text-white py-16">
+      <section className="bg-ncrst-blue text-white py-16 h-[300px] flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">National Commission on Research, Science & Technology</h1>
