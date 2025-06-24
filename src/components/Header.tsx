@@ -51,8 +51,8 @@ const Header: React.FC = () => {
       name: "Technology",
       href: "/technology",
       dropdown: [
-        { name: "National AI Working Group", href: "/technology#ai" },
         { name: "Biotechnology Labs", href: "/technology#biotech" },
+        { name: "National AI Working Group", href: "/technology#ai" },
         { name: "Biosafety", href: "/technology#biosafety" },
         { name: "Space Science and Technology (SST)", href: "/technology#sst" },
         { name: "Tech Resources", href: "/technology#resources" },
