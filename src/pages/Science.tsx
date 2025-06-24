@@ -30,7 +30,7 @@ const Science: React.FC = () => {
       description:
         "National competition promoting mathematical excellence and problem-solving skills among high school students.",
       icon: Target,
-      color: "bg-ncrst-green",
+      color: "bg-ncrst-grey",
       stats: {
         participants: "2744 students",
         regions: "All 14 regions",
@@ -56,7 +56,7 @@ const Science: React.FC = () => {
       description:
         "This initiative provides a unique platform to build practical skills, test scientific knowledge and showcase talents in STEM.",
       icon: Users,
-      color: "bg-ncrst-grey",
+      color: "bg-ncrst-gold",
       stats: {
         beneficiaries: "4,300+ students",
         programs: "Mr. & Mrs. STEM",
@@ -69,7 +69,7 @@ const Science: React.FC = () => {
       description:
         "Annual celebration of scientific achievements with workshops, exhibitions, and public engagement activities.",
       icon: Star,
-      color: "bg-purple-600",
+      color: "bg-ncrst-blue",
       stats: {
         duration: "1 week annually",
         events: "7 activities",
@@ -82,7 +82,7 @@ const Science: React.FC = () => {
       description:
         "Celebrating space science and astronomy, inspiring curiosity about the universe and Namibia's dark skies.",
       icon: Microscope,
-      color: "bg-indigo-600",
+      color: "bg-ncrst-grey",
       stats: {
         duration: "1 week annually",
         activities: "Stargazing events",
@@ -130,7 +130,7 @@ const Science: React.FC = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-ncrst-blue text-white py-16 h-[300px] flex items-center justify-center">
+      <section className=" relative bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white py-16 h-[300px] flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">
@@ -217,8 +217,8 @@ const Science: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            <div className="bg-gradient-to-br from-ncrst-blue to-ncrst-green text-white rounded-xl p-8">
-              <h3 className="text-2xl font-bold mb-4 leading-heading">
+            <div className="bg-white border-2 border-gray-200 rounded-xl p-8">
+              <h3 className="text-xl font-bold text-ncrst-grey mb-6 leading-heading">
                 Science Fair 2025
               </h3>
               <p className="text-lg mb-6 opacity-90">
@@ -249,7 +249,7 @@ const Science: React.FC = () => {
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-ncrst-blue rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-ncrst-gold rounded-full mt-2"></div>
                   <div>
                     <h4 className="font-semibold text-ncrst-grey">
                       Physical Sciences
@@ -260,7 +260,7 @@ const Science: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-ncrst-green rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-ncrst-gold rounded-full mt-2"></div>
                   <div>
                     <h4 className="font-semibold text-ncrst-grey">
                       Life Sciences
@@ -282,7 +282,7 @@ const Science: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-ncrst-grey rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-ncrst-gold rounded-full mt-2"></div>
                   <div>
                     <h4 className="font-semibold text-ncrst-grey">
                       Environmental Sciences
@@ -293,7 +293,7 @@ const Science: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-ncrst-gold rounded-full mt-2"></div>
                   <div>
                     <h4 className="font-semibold text-ncrst-grey">
                       Mathematics
@@ -304,7 +304,7 @@ const Science: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-ncrst-gold rounded-full mt-2"></div>
                   <div>
                     <h4 className="font-semibold text-ncrst-grey">
                       Social Sciences
@@ -418,7 +418,7 @@ const Science: React.FC = () => {
                 </ul>
               </div>
               <div className="text-center">
-                <div className="bg-white/20 p-6 rounded-xl">
+                <div className="bg-white/20  border-2 border-gray-400 p-6 rounded-xl">
                   <Brain size={64} className="mx-auto mb-4" />
                   <h4 className="text-xl font-bold mb-2">Subject Areas</h4>
                   <p className="text-sm">
@@ -447,7 +447,7 @@ const Science: React.FC = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <div className="bg-ncrst-blue p-6 text-white">
+              <div className="bg-ncrst-grey-light p-6 text-ncrst-grey">
                 <h3 className="text-2xl font-bold mb-2 leading-heading">
                   Mr. STEM Namibia
                 </h3>
@@ -488,7 +488,7 @@ const Science: React.FC = () => {
             </div>
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <div className="bg-ncrst-green p-6 text-white">
+              <div className="bg-ncrst-grey-light p-6 text-ncrst-grey">
                 <h3 className="text-2xl font-bold mb-2 leading-heading">
                   Mrs. STEM Namibia
                 </h3>
@@ -544,7 +544,7 @@ const Science: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-purple-600 text-white rounded-xl p-8">
+          <div className="bg-ncrst-grey text-ncrst-gold rounded-xl p-8">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold mb-4 leading-heading">
                 Science Week 2025
@@ -591,8 +591,8 @@ const Science: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-xl p-8">
-              <h3 className="text-2xl font-bold mb-4 leading-heading">
+            <div className="bg-white border-2 border-gray-200 rounded-xl p-8">
+              <h3 className="text-xl font-bold text-ncrst-grey mb-6 leading-heading">
                 World Space Week 2025
               </h3>
               <p className="text-lg mb-6 opacity-90">
