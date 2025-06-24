@@ -160,7 +160,7 @@ const Header: React.FC = () => {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       {/* Top Banner */}
-      <div className="bg-ncrst-blue text-white py-2">
+      <div className="bg-ncrst-grey text-white py-2 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center text-sm">
             <div>Republic of Namibia</div>
