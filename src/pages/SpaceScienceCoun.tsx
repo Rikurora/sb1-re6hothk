@@ -126,7 +126,7 @@ const SpaceScienceCoun: React.FC = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-16 h-[300px] flex items-center justify-center">
+      <section className=" relative bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white py-16 h-[300px] flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">National Space Science Council</h1>
@@ -269,7 +269,7 @@ const SpaceScienceCoun: React.FC = () => {
             {programmes.map((programme, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-0">
-                  <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white p-8">
+                  <div className="bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white p-8">
                     <h3 className="text-2xl font-bold mb-4 leading-heading">{programme.title}</h3>
                     <p className="opacity-90 leading-body">{programme.description}</p>
                     <div className="mt-6">
@@ -351,7 +351,7 @@ const SpaceScienceCoun: React.FC = () => {
       </section>
 
       {/* Namibia's Space Advantages */}
-      <section className="py-16 bg-gradient-to-r from-purple-600 to-blue-600 text-white">
+      <section className="py-16 bg-gradient-to-r from-ncrst-grey to-ncrst-grey text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 leading-heading">Namibia's Space Science Advantages</h2>
