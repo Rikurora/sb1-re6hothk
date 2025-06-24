@@ -418,7 +418,7 @@ const Science: React.FC = () => {
                 </ul>
               </div>
               <div className="text-center">
-                <div className="bg-white/20  border-2 border-gray-400 p-6 rounded-xl">
+                <div className="bg-white/20  p-6 rounded-xl">
                   <Brain size={64} className="mx-auto mb-4" />
                   <h4 className="text-xl font-bold mb-2">Subject Areas</h4>
                   <p className="text-sm">

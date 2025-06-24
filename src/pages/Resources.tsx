@@ -175,7 +175,7 @@ const Resources: React.FC = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-ncrst-grey text-white py-16 h-[300px] flex items-center justify-center">
+      <section className="relative bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white py-16 h-[300px] flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">
@@ -263,7 +263,7 @@ const Resources: React.FC = () => {
               >
                 <div className="flex items-center justify-between mb-4">
                   <div className="bg-ncrst-blue/10 p-2 rounded-lg">
-                    <FileText className="text-ncrst-blue" size={20} />
+                    <FileText className="text-ncrst-gold" size={20} />
                   </div>
                   <div className="flex items-center space-x-2">
                     <span className="text-xs bg-gray-100 px-2 py-1 rounded">
@@ -459,7 +459,7 @@ const Resources: React.FC = () => {
       {/* Quick Access Portal */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-ncrst-blue to-ncrst-green text-white rounded-xl p-8">
+          <div className="bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white rounded-xl p-8">
             <div className="text-center">
               <h3 className="text-2xl font-bold mb-4 leading-heading">
                 Need More Resources?
