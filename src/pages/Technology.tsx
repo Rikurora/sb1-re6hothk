@@ -74,7 +74,7 @@ const Technology: React.FC = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-ncrst-grey text-white py-16 h-[300px] flex items-center justify-center">
+      <section className="relative bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white  py-16 h-[300px] flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">Technology & Innovation</h1>
@@ -96,7 +96,7 @@ const Technology: React.FC = () => {
           </div>
 
           {/* AI Group Overview */}
-          <div className="bg-gradient-to-r from-ncrst-blue to-ncrst-green text-white rounded-xl p-8 mb-12">
+          <div className="bg-ncrst-grey-light text-ncrst-grey rounded-xl p-8 mb-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-2xl font-bold mb-4 leading-heading">Join the AI Revolution</h3>
@@ -119,7 +119,7 @@ const Technology: React.FC = () => {
                 </div>
               </div>
               <div className="text-center">
-                <div className="bg-white/10 p-8 rounded-xl">
+                <div className="bg-ncrst-grey/10 p-8 rounded-xl">
                   <Brain className="text-ncrst-gold mx-auto mb-4" size={64} />
                   <h4 className="text-xl font-bold mb-2 leading-heading">Become a Member</h4>
                   <p className="text-sm opacity-90 mb-4">Join Namibia's premier AI community</p>
@@ -205,7 +205,7 @@ const Technology: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             {biotechLabs.map((lab, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="bg-ncrst-green p-6 text-white">
+                <div className="bg-ncrst-blue p-6 text-white">
                   <div className="flex items-center space-x-3 mb-3">
                     <Microscope size={32} />
                     <h3 className="text-lg font-bold leading-heading">{lab.name}</h3>
@@ -235,7 +235,7 @@ const Technology: React.FC = () => {
                   </div>
                   <a
                     href="/contact"
-                    className="w-full mt-6 bg-ncrst-green text-white py-2 rounded-lg font-medium hover:bg-ncrst-green/90 transition-colors block text-center"
+                    className="w-full mt-6 bg-ncrst-blue text-white py-2 rounded-lg font-medium hover:bg-ncrst-gold/90 transition-colors block text-center"
                   >
                     Request Services
                   </a>
@@ -292,7 +292,7 @@ const Technology: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-ncrst-green text-white rounded-xl p-8">
+            <div className="bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white rounded-xl p-8">
               <div className="flex items-center space-x-3 mb-6">
                 <Shield size={32} />
                 <h3 className="text-2xl font-bold leading-heading">Biosafety Regulation</h3>
@@ -314,21 +314,21 @@ const Technology: React.FC = () => {
               <h3 className="text-xl font-bold text-ncrst-grey mb-6 leading-heading">Biosafety Services</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-ncrst-green rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-ncrst-gold rounded-full mt-2"></div>
                   <div>
                     <h4 className="font-semibold text-ncrst-grey">Permit Applications</h4>
                     <p className="text-sm text-ncrst-grey-dark">Guidance and processing of biosafety permits</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-ncrst-green rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-ncrst-gold rounded-full mt-2"></div>
                   <div>
                     <h4 className="font-semibold text-ncrst-grey">Risk Assessment</h4>
                     <p className="text-sm text-ncrst-grey-dark">Scientific evaluation of potential risks</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-ncrst-green rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-ncrst-gold rounded-full mt-2"></div>
                   <div>
                     <h4 className="font-semibold text-ncrst-grey">Compliance Monitoring</h4>
                     <p className="text-sm text-ncrst-grey-dark">Ensuring adherence to biosafety regulations</p>
@@ -351,7 +351,7 @@ const Technology: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-xl p-8">
+            <div className="bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white rounded-xl p-8">
               <div className="flex items-center space-x-3 mb-6">
                 <Rocket size={32} />
                 <h3 className="text-2xl font-bold leading-heading">Space Initiatives</h3>
