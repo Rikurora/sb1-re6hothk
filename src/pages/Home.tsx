@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import slide1 from "../assets/slide1.jpg";
+import slide2 from "../assets/slide2.jpg";
+import slide3 from "../assets/slide3.jpg";
 import {
   ArrowRight,
   Calendar,
@@ -148,17 +152,25 @@ const Home: React.FC = () => {
   // Carousel code added here
   const carouselItems = [
     {
-      image: "/images/slide1.jpg",
+      image: slide1,
       title: "Welcome to NCRST",
       description: "Driving innovation, research, and technology in Namibia.",
     },
     {
-      image: "/images/slide2.jpg",
+      image: slide2,
       title: "Empowering Innovators",
       description: "Supporting Namibian entrepreneurs and scientists.",
+      button: (
+        <Link
+          to="/innovation"
+          className="mt-6 bg-ncrst-gold text-ncrst-grey px-6 py-3 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-all shadow-lg"
+        >
+          Explore Innovation
+        </Link>
+      ),
     },
     {
-      image: "/images/slide3.jpg",
+      image: slide3,
       title: "Building the Future",
       description: "Fostering a culture of science and technology.",
     },
@@ -167,30 +179,65 @@ const Home: React.FC = () => {
   return (
     <div>
       {/* Carousel Section */}
-      <section className="relative bg-ncrst-grey text-white">
+      <section className="relative text-white h-screen overflow-hidden">
         <Carousel
           showThumbs={false}
           autoPlay
           infiniteLoop
           showStatus={false}
           interval={5000}
-          className="rounded-xl overflow-hidden"
+          className="h-full w-full"
+          renderArrowPrev={(onClickHandler, hasPrev, label) =>
+            hasPrev && (
+              <button
+                type="button"
+                onClick={onClickHandler}
+                title={label}
+                className="absolute left-6 top-1/2 -translate-y-1/2 z-10
+                           rounded-full text-ncrst-blue p-3
+                           shadow-none hover:shadow-lg hover:shadow-ncrst-blue/40
+                           transition-all duration-200 focus:outline-none
+                           bg-transparent hover:bg-white/80"
+                style={{ boxShadow: "none" }}
+              >
+                <ArrowRight className="rotate-180" size={24} />
+              </button>
+            )
+          }
+          renderArrowNext={(onClickHandler, hasNext, label) =>
+            hasNext && (
+              <button
+                type="button"
+                onClick={onClickHandler}
+                title={label}
+                className="absolute right-6 top-1/2 -translate-y-1/2 z-10
+                           rounded-full text-ncrst-blue p-3
+                           shadow-none hover:shadow-lg hover:shadow-ncrst-blue/40
+                           transition-all duration-200 focus:outline-none
+                           bg-transparent hover:bg-white/80"
+                style={{ boxShadow: "none" }}
+              >
+                <ArrowRight size={24} />
+              </button>
+            )
+          }
         >
           {carouselItems.map((item, idx) => (
             <div
               key={idx}
-              className="relative h-96 flex items-center justify-center"
+              className="relative h-screen w-full flex items-center justify-center"
             >
               <img
                 src={item.image}
                 alt={item.title}
-                className="object-cover w-full h-96 opacity-70"
+                className="object-cover w-full h-screen opacity-70"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center">
                 <h2 className="text-4xl font-bold mb-4 drop-shadow">
                   {item.title}
                 </h2>
                 <p className="text-lg drop-shadow">{item.description}</p>
+                {item.button && item.button}
               </div>
             </div>
           ))}
