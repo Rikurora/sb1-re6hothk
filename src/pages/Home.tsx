@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Carousel } from "react-responsive-carousel";
 import {
   ArrowRight,
   Calendar,
@@ -144,8 +145,58 @@ const Home: React.FC = () => {
     }
   };
 
+  // Carousel code added here
+  const carouselItems = [
+    {
+      image: "/images/slide1.jpg",
+      title: "Welcome to NCRST",
+      description: "Driving innovation, research, and technology in Namibia.",
+    },
+    {
+      image: "/images/slide2.jpg",
+      title: "Empowering Innovators",
+      description: "Supporting Namibian entrepreneurs and scientists.",
+    },
+    {
+      image: "/images/slide3.jpg",
+      title: "Building the Future",
+      description: "Fostering a culture of science and technology.",
+    },
+  ];
+
   return (
     <div>
+      {/* Carousel Section */}
+      <section className="relative bg-ncrst-grey text-white">
+        <Carousel
+          showThumbs={false}
+          autoPlay
+          infiniteLoop
+          showStatus={false}
+          interval={5000}
+          className="rounded-xl overflow-hidden"
+        >
+          {carouselItems.map((item, idx) => (
+            <div
+              key={idx}
+              className="relative h-96 flex items-center justify-center"
+            >
+              <img
+                src={item.image}
+                alt={item.title}
+                className="object-cover w-full h-96 opacity-70"
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <h2 className="text-4xl font-bold mb-4 drop-shadow">
+                  {item.title}
+                </h2>
+                <p className="text-lg drop-shadow">{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </Carousel>
+      </section>
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-ncrst-blue to-ncrst-green text-white">
         <div className="absolute inset-0 bg-black/20"></div>
