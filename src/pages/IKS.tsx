@@ -136,7 +136,7 @@ const IKS: React.FC = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-ncrst-green to-ncrst-gold text-white py-16">
+      <section className="bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white py-16 h-[300px] flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">National Indigenous Knowledge System (IKS)</h1>
@@ -287,7 +287,7 @@ const IKS: React.FC = () => {
             {initiatives.map((initiative, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-0">
-                  <div className="bg-gradient-to-r from-ncrst-green to-ncrst-gold text-white p-8">
+                  <div className="bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white p-8">
                     <h3 className="text-2xl font-bold mb-4 leading-heading">{initiative.title}</h3>
                     <p className="opacity-90 leading-body">{initiative.description}</p>
                     <div className="mt-6">
@@ -371,7 +371,7 @@ const IKS: React.FC = () => {
           </div>
 
           {/* Research Ethics */}
-          <div className="bg-ncrst-green text-white rounded-xl p-8">
+          <div className="bg-ncrst-grey text-white rounded-xl p-8">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold mb-4 leading-heading">Research Ethics & Community Protocols</h3>
               <p className="text-lg opacity-90 max-w-3xl mx-auto leading-body">

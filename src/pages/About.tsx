@@ -98,7 +98,7 @@ const About: React.FC = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-ncrst-blue text-white py-16">
+      <section className="relative bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white py py-16 h-[300px] flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">
@@ -118,7 +118,7 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
             <div className="lg:col-span-1">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="bg-ncrst-blue p-6 text-white text-center">
+                <div className="bg-ncrst-grey p-6 text-white text-center bg-opacity-70">
                   <div className="w-32 h-32 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
                     {/* <Users className="text-white" size={48} /> */}
                     <img
@@ -176,7 +176,7 @@ const About: React.FC = () => {
                   <h3 className="text-xl font-semibold text-ncrst-grey mb-3">
                     Mission
                   </h3>
-                  <p className="bg-ncrst-green/5 p-4 rounded-lg border-l-4 border-ncrst-green italic">
+                  <p className="bg-ncrst-blue/5 p-4 rounded-lg border-l-4 border-ncrst-blue italic">
                     "To coordinate, promote, and regulate research, science,
                     technology, and innovation activities in Namibia through
                     strategic partnerships, capacity building, and
@@ -314,7 +314,7 @@ const About: React.FC = () => {
           <div className="bg-white rounded-xl shadow-lg p-8">
             {/* Line Ministry */}
             <div className="text-center mb-8">
-              <div className="bg-ncrst-green text-white px-8 py-4 rounded-lg inline-block mb-4 max-w-2xl">
+              <div className="bg-ncrst-grey text-white px-8 py-4 rounded-lg inline-block mb-4 max-w-2xl">
                 <h3 className="font-bold text-lg leading-heading">
                   Ministry of Education, Innovation, Youth, Sports, Arts, and
                   Culture
@@ -331,7 +331,7 @@ const About: React.FC = () => {
 
             {/* Board of Commissioners */}
             <div className="text-center mb-8">
-              <div className="bg-ncrst-blue text-white px-8 py-4 rounded-lg inline-block mb-4">
+              <div className="bg-ncrst-grey text-white px-8 py-4 rounded-lg inline-block mb-4">
                 <h3 className="font-bold text-lg leading-heading">
                   Board of Commissioners
                 </h3>
@@ -344,7 +344,7 @@ const About: React.FC = () => {
               <div className="w-0 h-0 border-l-4 border-r-4 border-t-8 border-l-transparent border-r-transparent border-t-ncrst-grey mx-auto"></div>
             </div>
             <div className="text-center mb-8">
-              <div className="bg-ncrst-blue text-white px-8 py-4 rounded-lg inline-block mb-4">
+              <div className="bg-ncrst-grey text-white px-8 py-4 rounded-lg inline-block mb-4">
                 <h3 className="font-bold text-lg leading-heading">
                   Chief Executive Officer
                 </h3>

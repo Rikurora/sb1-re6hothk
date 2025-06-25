@@ -150,7 +150,7 @@ const Innovation: React.FC = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-ncrst-green text-white py-16">
+      <section className="relative bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white py-16 h-[300px] flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">
@@ -183,7 +183,7 @@ const Innovation: React.FC = () => {
                 key={index}
                 className="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-ncrst-green hover:shadow-xl transition-all"
               >
-                <div className="bg-gradient-to-r from-ncrst-green to-ncrst-blue text-white p-6">
+                <div className="bg-gradient-to-r from-ncrst-grey to-ncrst-blue text-white p-6">
                   <div className="flex items-center space-x-3 mb-3">
                     <Rocket size={32} />
                     <h3 className="text-2xl font-bold leading-heading">
@@ -250,7 +250,7 @@ const Innovation: React.FC = () => {
                     </div>
                   </div>
 
-                  <button className="w-full mt-6 bg-ncrst-green text-white py-3 rounded-lg font-semibold hover:bg-ncrst-green/90 transition-colors">
+                  <button className="w-full mt-6 bg-ncrst-blue text-white py-3 rounded-lg font-semibold hover:bg-ncrst-gold/90 transition-colors">
                     Apply Now
                   </button>
                 </div>
@@ -326,7 +326,7 @@ const Innovation: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-ncrst-blue text-white rounded-xl p-8 mb-8">
+          <div className="bg-ncrst-grey text-white rounded-xl p-8 mb-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-2xl font-bold mb-4 leading-heading">
@@ -476,7 +476,7 @@ const Innovation: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-ncrst-green text-white rounded-xl p-8">
+          <div className="bg-ncrst-grey text-white rounded-xl p-8">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold mb-4 leading-heading">
                 Continental Collaboration

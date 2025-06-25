@@ -168,7 +168,7 @@ const BiosafetyCouncil: React.FC = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-ncrst-green text-white py-16">
+      <section className="relative bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white py-16 h-[300px] flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">Biosafety Council</h1>
@@ -212,8 +212,10 @@ const BiosafetyCouncil: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-ncrst-green text-white rounded-xl p-8">
-              <h3 className="text-2xl font-bold mb-6 leading-heading">Regulatory Principles</h3>
+            <div className="bg-ncrst-grey text-white rounded-xl p-8">
+              <h3 className="text-2xl font-bold mb-6 leading-heading">
+                Regulatory Principles
+              </h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="bg-white/20 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -372,7 +374,7 @@ const BiosafetyCouncil: React.FC = () => {
                 <div className="flex items-center justify-between text-xs text-ncrst-grey-dark mb-4">
                   <span>Size: {form.size}</span>
                 </div>
-                <button className="w-full bg-ncrst-green text-white py-2 rounded-lg font-medium hover:bg-ncrst-green/90 transition-colors flex items-center justify-center space-x-2">
+                <button className="w-full bg-ncrst-blue text-white py-2 rounded-lg font-medium hover:bg-ncrst-gold/90 transition-colors flex items-center justify-center space-x-2">
                   <Download size={16} />
                   <span>Download</span>
                 </button>
@@ -381,8 +383,10 @@ const BiosafetyCouncil: React.FC = () => {
           </div>
 
           {/* Application Process Steps */}
-          <div className="bg-ncrst-blue text-white rounded-xl p-8">
-            <h3 className="text-2xl font-bold mb-6 text-center leading-heading">Application Process</h3>
+          <div className="bg-ncrst-grey text-white rounded-xl p-8">
+            <h3 className="text-2xl font-bold mb-6 text-center leading-heading">
+              Application Process
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
               <div className="text-center">
                 <div className="bg-white/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -504,8 +508,10 @@ const BiosafetyCouncil: React.FC = () => {
           </div>
 
           <div className="text-center mt-12">
-            <div className="bg-ncrst-green text-white rounded-xl p-8">
-              <h3 className="text-xl font-bold mb-4 leading-heading">Need More Information?</h3>
+            <div className="bg-ncrst-blue text-white rounded-xl p-8">
+              <h3 className="text-xl font-bold mb-4 leading-heading">
+                Need More Information?
+              </h3>
               <p className="mb-6 opacity-90 leading-body">
                 Contact our biosafety team for guidance on permit applications and regulatory requirements.
               </p>

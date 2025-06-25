@@ -128,7 +128,7 @@ const Procurement: React.FC = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-ncrst-blue text-white py-16">
+      <section className="relative bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white py-16 h-[300px] flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">Procurement & Bids</h1>
@@ -395,7 +395,7 @@ const Procurement: React.FC = () => {
                 <h3 className="text-xl font-bold text-ncrst-grey mb-6 leading-heading">Submission Process</h3>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="bg-ncrst-blue text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">
+                    <div className="bg-ncrst-gold text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">
                       <span className="text-sm font-bold">1</span>
                     </div>
                     <div>
@@ -404,7 +404,7 @@ const Procurement: React.FC = () => {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-ncrst-blue text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">
+                    <div className="bg-ncrst-gold text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">
                       <span className="text-sm font-bold">2</span>
                     </div>
                     <div>
@@ -413,7 +413,7 @@ const Procurement: React.FC = () => {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-ncrst-blue text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">
+                    <div className="bg-ncrst-gold text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">
                       <span className="text-sm font-bold">3</span>
                     </div>
                     <div>
@@ -422,7 +422,7 @@ const Procurement: React.FC = () => {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-ncrst-blue text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">
+                    <div className="bg-ncrst-gold text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">
                       <span className="text-sm font-bold">4</span>
                     </div>
                     <div>
@@ -431,7 +431,7 @@ const Procurement: React.FC = () => {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-ncrst-blue text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">
+                    <div className="bg-ncrst-gold text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">
                       <span className="text-sm font-bold">5</span>
                     </div>
                     <div>
@@ -442,7 +442,7 @@ const Procurement: React.FC = () => {
                 </div>
               </div>
 
-              <div className="bg-ncrst-blue text-white rounded-xl p-8">
+              <div className="bg-ncrst-grey text-white rounded-xl p-8">
                 <h3 className="text-xl font-bold mb-6 leading-heading">Required Documents</h3>
                 <div className="space-y-4">
                   <div>
