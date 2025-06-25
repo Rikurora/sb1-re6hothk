@@ -226,14 +226,16 @@ const Home: React.FC = () => {
           {carouselItems.map((item, idx) => (
             <div
               key={idx}
-              className="relative h-screen w-full flex items-center justify-center"
+              className="relative h-screen w-full flex items-center justify-start"
             >
               <img
                 src={item.image}
                 alt={item.title}
-                className="object-cover w-full h-screen opacity-70"
+                className="object-cover w-full h-screen"
               />
-              <div className="absolute inset-0 flex flex-col items-center justify-center">
+              {/* Darker overlay */}
+              <div className="absolute inset-0 bg-black/70"></div>
+              <div className="absolute inset-0 flex flex-col items-start justify-center z-10 pl-24 md:pl-40 max-w-2xl">
                 <h2 className="text-4xl font-bold mb-4 drop-shadow">
                   {item.title}
                 </h2>
