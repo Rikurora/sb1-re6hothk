@@ -9,6 +9,7 @@ export default {
           gold: '#FFD332',
           green: '#009E85',
           blue: '#312783',
+          yellow: "#F59E0B",
           'grey-light': '#f8f8f8',
           'grey-dark': '#5a5958',
         }

@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import slide1 from "../assets/slide1.jpg";
 import slide2 from "../assets/slide2.jpg";
 import slide3 from "../assets/slide3.jpg";
+import CurvedBackground from "../components/CurvedBackground";
 import {
   ArrowRight,
   Calendar,
@@ -245,8 +246,10 @@ const Home: React.FC = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-ncrst-blue to-ncrst-green text-white">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <div className="border-t-4 border-ncrst-gold w-full"></div>
+      <section className="relative text-ncrst-grey">
+        <div className="absolute inset-0"></div>
+        <CurvedBackground />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-heading">
@@ -256,7 +259,7 @@ const Home: React.FC = () => {
               </span>
             </h1>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-7 mb-8 max-w-4xl mx-auto">
-              <p className="text-lg md:text-xl leading-body opacity-95">
+              <p className="text-lg md:text-xl leading-body opacity-95 text-ncrst-grey">
                 The National Commission on Research, Science and Technology
                 (NCRST) is a statutory body promoting coordination and
                 development of Research, Science, Technology and Innovation in
@@ -273,12 +276,15 @@ const Home: React.FC = () => {
               </button>
               <Link
                 to="/about"
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-ncrst-blue transition-colors"
+                className="border-2 border-ncrst-grey text-ncrst-grey px-8 py-4 rounded-lg font-semibold hover:bg-ncrst-grey-light hover:text-ncrst-blue transition-colors"
               >
                 Learn More About Us
               </Link>
             </div>
           </div>
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 flex justify-center">
+          <div className="border-t-4 border-ncrst-gold w-1/4"></div>
         </div>
       </section>
 
