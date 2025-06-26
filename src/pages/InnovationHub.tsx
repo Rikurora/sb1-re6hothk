@@ -13,7 +13,7 @@ const Innovation: React.FC = () => {
         "Developed a mobile app & website, expanded to an Author Hub for African writers, increased social media presence, and secured seed funding from Impacther Africa",
       funding: "BOOST-UP programme",
       image:
-        "https://scontent.fers4-1.fna.fbcdn.net/v/t39.30808-6/473694455_1784071045469124_2245374436978736370_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Q-XdgqlpUSAQ7kNvwFSbrBe&_nc_oc=AdkDF1Lr5hkZ3IcpwX3Iy0DX5A7PAGRivbUV1IFF9-FNddMhjBwptwPgjfHyRtzAbh0&_nc_zt=23&_nc_ht=scontent.fers4-1.fna&_nc_gid=a4puxn5rJRqgRsKy3jJMdQ&oh=00_AfPrus-3xhIR4iTk69JKeaNEd7h5tryd7tv1W-R-rzi_dQ&oe=684F25E7",
+        "https://external.fers4-1.fna.fbcdn.net/emg1/v/t13/4227578532416473?url=https%3A%2F%2Fnamibiatoday.com%2Fwp-content%2Fuploads%2F2025%2F01%2FVictoria-Haihambi.png&fb_obo=1&utld=namibiatoday.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p500x261_q75_tt6&_nc_gid=Qw7fklvl8Hk4yQg8XSpm1w&_nc_oc=AdkjrC1AMA3_XmwRADX0T6Xo_9nq71BvjcIDTodrj2qZoWwgg7rmpVWm-p33GDgavbo&ccb=13-1&oh=06_Q3-0Aej4-mIGHEqqLh_2rsvIQlIh1JNZwq24VlFe8oBUroDA&oe=685EE9AC&_nc_sid=c97757",
     },
     {
       name: "Sara Iyaloo S. Ekondo",
@@ -25,7 +25,7 @@ const Innovation: React.FC = () => {
         "Reduced farm-level food spoilage, created jobs, and built a small-holder farmer database for sustainable sourcing",
       funding: "NICW programme",
       image:
-        "https://scontent.fers4-1.fna.fbcdn.net/v/t39.30808-6/481176930_647080284525501_5494073247083489745_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rNRO26IIbQIQ7kNvwE0pR36&_nc_oc=Adk1dFHYI2LntyH06iqcVS4B15CeqdIL3EkijSxR4PQ8Iw_XAJxLCRip-tioeznMbAM&_nc_zt=23&_nc_ht=scontent.fers4-1.fna&_nc_gid=Z5iFbcKMLejdjJU8n97phw&oh=00_AfOg1Wlh_hqTApR7hSyQK5pWcp7apR-ZOufUStmQUjP5cQ&oe=684F37F5",
+        "https://scontent.fers4-1.fna.fbcdn.net/v/t39.30808-6/481176930_647080284525501_5494073247083489745_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ccKrlaDeBIoQ7kNvwF1sU1-&_nc_oc=AdmMXurbFCi2DE7UOx5Jp470bjqSBqE_oDL4lSjsgfhg9qdkgVbQ1XDF4vhcTAcCZBY&_nc_zt=23&_nc_ht=scontent.fers4-1.fna&_nc_gid=4Pps6uV_ihaeDLzMdfPB3Q&oh=00_AfPHHgleXL2TGUU5sYkphO7a5rOt6WTLgMU6LTV3OIdnhg&oe=6862C635",
     },
     {
       name: "Verna Nghuumono",
@@ -48,7 +48,7 @@ const Innovation: React.FC = () => {
         "Enhancing brand awareness, investor attraction and customer acquisition through cutting-edge visual storytelling",
       funding: "BOOST-UP programme",
       image:
-        "https://scontent.fers4-1.fna.fbcdn.net/v/t39.30808-6/480271760_1570729174329722_1139182505980930790_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=s3u4iZ69_xUQ7kNvwGdzXew&_nc_oc=Adn8ypogsZJ8IwbL-4enlZC7mCTBwJe9h2zlLyNLvQDlXw1aHqZpKXufmQ5ArYrVYHk&_nc_zt=23&_nc_ht=scontent.fers4-1.fna&_nc_gid=eXAKZXYrzWc-OtuhiSOgJw&oh=00_AfMNI8HFdmEBNfr1gOWd0Ne0M8dRN0df-S0PA7NRx8lOBQ&oe=684F2BBD",
+        "https://scontent.fers4-1.fna.fbcdn.net/v/t39.30808-6/480271760_1570729174329722_1139182505980930790_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=0AZiO1N6GmoQ7kNvwFEsBbK&_nc_oc=AdmSciKdTQxcET2WnO32yqDueY3_73Zp3ALrVty54vIReoyGxQqYI8rirSMQyZ_j6pc&_nc_zt=23&_nc_ht=scontent.fers4-1.fna&_nc_gid=92xodVC0XEhCZfZ7kcvPZw&oh=00_AfMCQxm0VzpMmejwHwOTszkHiVbXRj01Sg2bnyTlfLRtkg&oe=6862B9FD",
     },
     {
       name: "Haita Ester",
@@ -60,7 +60,7 @@ const Innovation: React.FC = () => {
         "Promoting health through local organic products while preserving traditional food knowledge",
       funding: "NICW programme",
       image:
-        "https://scontent.fers4-1.fna.fbcdn.net/v/t39.30808-6/489952016_1176531004259108_8979381946798009155_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=nJOye_WZi5AQ7kNvwHtWOW7&_nc_oc=Adn7wv-1SlOR-BlprmGn6v6Jp9exjTKGxu_96iY5_sqaMXhkRCkFKqCQLHkrQORc5BI&_nc_zt=23&_nc_ht=scontent.fers4-1.fna&_nc_gid=fbKv1RazPZ8Y5QDpSi9BjA&oh=00_AfNHfQ6tQK9LPRQ-bL6Vp4c30N9_A6MfyfFNW_1iwrchzg&oe=684F0235",
+        "https://scontent.fers4-1.fna.fbcdn.net/v/t39.30808-6/489952016_1176531004259108_8979381946798009155_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=M3IjyihTnS4Q7kNvwGl4lBu&_nc_oc=AdnXJMzJrt8ica6mDmZktaoOSUd6-wJnDMBcIvrWK6O_APgdB0xAaXLN7Uf3kJmldTo&_nc_zt=23&_nc_ht=scontent.fers4-1.fna&_nc_gid=wGi3s3oJJUX2wnSLakdxAw&oh=00_AfOjp5Iame6cLvNe0mwEBOs7RfgbuSUOWxS3eW0p8JqH3w&oe=6862C8B5",
     },
     {
       name: "Dankie Nendongo",
@@ -72,7 +72,7 @@ const Innovation: React.FC = () => {
         "Closing Africa's digital divide - targeting the 40% of continent without internet access",
       funding: "BOOST-UP programme",
       image:
-        "https://media.licdn.com/dms/image/v2/C4D03AQFbbr5sI_AWsQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1640990216019?e=1755129600&v=beta&t=t4WgTRQD5r0QgMLBfr2mah7V2kixVSSARTPhuUVOsa8",
+        "https://media.licdn.com/dms/image/v2/D4D03AQEzzduqzP_8Qg/profile-displayphoto-shrink_800_800/B4DZdfFZyZHkAc-/0/1749646942062?e=1756339200&v=beta&t=5QOF8IzFtTKhdEhUG-QBJr5pmKnT0THenNLmUNkHHlI",
     },
     {
       name: "Jesse Liula Schiceya",
@@ -91,7 +91,7 @@ const Innovation: React.FC = () => {
       innovation: "Community empowerment through direct payments",
       impact: "Enables seamless payments to stores and service stations",
       funding: "BOOST-UP programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "https://media.licdn.com/dms/image/v2/D4D03AQGyhgO8wR_UNA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727729509754?e=1756339200&v=beta&t=7Qbc5rDlExzBJcAq8XXNqhGgUplG3iMIfrqvDYN6AX8",
     },
     {
       name: "Roswitha Matheus",
@@ -100,7 +100,7 @@ const Innovation: React.FC = () => {
       innovation: "Manufacturing clean cook stoves",
       impact: "Provides clean cooking solutions and promotes green energy",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",
+      image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAMFBMVEX////LycbIxsPo5+bMysfs6+r7+/vRz83f3tzX1dPi4d/b2tjw7+7z8vLZ2NXv7+4G0JKeAAAEoElEQVR4nO2d25qrIAxGK4qIp77/2+5ae7JTD0hMgvtfV3MxF6wPCBAJvVwAAAAAAAAAAAAAAAAAAADA2Sg7W1e9975v6vxaSjeHmNI2hRnIBsa/fN5JN4uKMncPtSnGFNUZJDv/U+8p6ax0AyPp3LzeQ7LIpRsZQenX/EbHq3RD91Jv8bs7+iRDa7k6QD8dW+nmhmMD/AbFSrrBoVRhgjdFJ93kMPpQwSHgpDQZN8XQv6SjuFMwS6YXm52CN0Xppm8j3y14WxilG7+Fbr9gIotGhF+WxNK/Y52YIi2wxjVW0DTSCitE+g2Kuk/Fm48TC+jevhEIZkbzcZGiC3V3IoWf6pkYeCacpZcWmcXRCGZGWmSOkqgLM6M1xRix5f5C6wbcUwmqHaZkglqXxKhj05dhLS3zE7ppqHUiBicQF9CZzqALNFpDTUFpqDLrRjhIlW5NSQ1VpmtIDTXu28h2pWoNz9+HmIdhhipj6fnXw/PvaSj3pTpz++c/W5z/fEgYTHUuFv9Dnub8uTa6fKna64pkOW+V6/0A1TDVOkgvVNFUayQdoNnW6Ey0jZDEGp1nwycUnaj5E/CFYiYq/WbxIj6cKg6kI7Frot618ElksNEdZkai7n2pv/N1JyaeKo+jT/Zegs7SuekdUkvyif4o82Kfos4k6Qy7FNPpwYHgq8JpFZQMBF5TTOOW/pQuC6ldU5u3WGRzZYlxqY3QJ+s1sne/RDtwxBardcBa89ubsb9L1Z9+Rep+A12VzdTjm15xzimMrvbvJxVGOeMq5Yf5YDpbN94N+Ka2KW3QAAAAAAAAAAAAcF661uah2LZLIy/c1n58yHMPmausas0y92YpO7qBIQlXa5Vsl97xDLN0GvP8du+n7RlJbbnwltRvdNTUj9veKQ121POuKWUpydRRyf2hQzrwoVgoyP6Xq18I4xzF77lFv162qigcVNujBaUfGmQQlFUkrFZbVBQbqKT16YuKUuGGsvB3RVFm0ThwHfyLhOBhO5lfGIEn3Ngm4UORf49KWZu+CW5BlpXwE/Ylg6qYMkCRN7dx+Hb0hyHv1oa/C5kLvJm2a1+GnGmNRkCQt7ZUogtZ924CceZuyBdrZAYp5zAVEuRbEpm3pB+GXOdEqiefww25JiLNu+R74CrAZD9WvGEy5MtefMMVasQE2dZ8sWnIZSi2WLC96yJpyJOtgWH6hpKxlGm1kEhhPAx5BAV3bVwF3yJZmgG+TI3UMOXLtgkdnzgzpjKdyJkwFVkSeb8EC4xT7gsLrN9H74Ls30iZFSWuuLGuijJXMYN+WjwSqQt8pG+UzyP5uAtLSJW9u3f8SJW/YnpwTNXwE8jHXPJ++Il34IgNefMqxE/69uwHNVEtyVSw11Q7U+7/xfg5P69jgL4po3+Qe+Ln1NRafHBzJJI0Tuv7UWVF4GhMr218TsgXHy/b4Feorc17MTxetr/7tA7PL9rm9wttK3pevD4mhK5yAeWkxhRNIr33SWm3WN7+o+hz9XNvlrLLG5dN3tt7mw01v319TdfuTdnZvGq8K8Yq76xwvq9qewo3AAAAAAAAAAAAAAAAAAAA8OIfvUM8YTLc6kkAAAAASUVORK5CYII=",
     },
     {
       name: "Akuumba Andrias",
@@ -208,7 +208,7 @@ const Innovation: React.FC = () => {
       innovation: "Home gardening and homemade jams",
       impact: "Promotes local food production and self-sufficiency",
       funding: "NICW programme",
-      image: "/hengua.jpeg",
+      image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAMFBMVEX////LycbIxsPo5+bMysfs6+r7+/vRz83f3tzX1dPi4d/b2tjw7+7z8vLZ2NXv7+4G0JKeAAAEoElEQVR4nO2d25qrIAxGK4qIp77/2+5ae7JTD0hMgvtfV3MxF6wPCBAJvVwAAAAAAAAAAAAAAAAAAADA2Sg7W1e9975v6vxaSjeHmNI2hRnIBsa/fN5JN4uKMncPtSnGFNUZJDv/U+8p6ax0AyPp3LzeQ7LIpRsZQenX/EbHq3RD91Jv8bs7+iRDa7k6QD8dW+nmhmMD/AbFSrrBoVRhgjdFJ93kMPpQwSHgpDQZN8XQv6SjuFMwS6YXm52CN0Xppm8j3y14WxilG7+Fbr9gIotGhF+WxNK/Y52YIi2wxjVW0DTSCitE+g2Kuk/Fm48TC+jevhEIZkbzcZGiC3V3IoWf6pkYeCacpZcWmcXRCGZGWmSOkqgLM6M1xRix5f5C6wbcUwmqHaZkglqXxKhj05dhLS3zE7ppqHUiBicQF9CZzqALNFpDTUFpqDLrRjhIlW5NSQ1VpmtIDTXu28h2pWoNz9+HmIdhhipj6fnXw/PvaSj3pTpz++c/W5z/fEgYTHUuFv9Dnub8uTa6fKna64pkOW+V6/0A1TDVOkgvVNFUayQdoNnW6Ey0jZDEGp1nwycUnaj5E/CFYiYq/WbxIj6cKg6kI7Frot618ElksNEdZkai7n2pv/N1JyaeKo+jT/Zegs7SuekdUkvyif4o82Kfos4k6Qy7FNPpwYHgq8JpFZQMBF5TTOOW/pQuC6ldU5u3WGRzZYlxqY3QJ+s1sne/RDtwxBardcBa89ubsb9L1Z9+Rep+A12VzdTjm15xzimMrvbvJxVGOeMq5Yf5YDpbN94N+Ka2KW3QAAAAAAAAAAAAcF661uah2LZLIy/c1n58yHMPmausas0y92YpO7qBIQlXa5Vsl97xDLN0GvP8du+n7RlJbbnwltRvdNTUj9veKQ121POuKWUpydRRyf2hQzrwoVgoyP6Xq18I4xzF77lFv162qigcVNujBaUfGmQQlFUkrFZbVBQbqKT16YuKUuGGsvB3RVFm0ThwHfyLhOBhO5lfGIEn3Ngm4UORf49KWZu+CW5BlpXwE/Ylg6qYMkCRN7dx+Hb0hyHv1oa/C5kLvJm2a1+GnGmNRkCQt7ZUogtZ924CceZuyBdrZAYp5zAVEuRbEpm3pB+GXOdEqiefww25JiLNu+R74CrAZD9WvGEy5MtefMMVasQE2dZ8sWnIZSi2WLC96yJpyJOtgWH6hpKxlGm1kEhhPAx5BAV3bVwF3yJZmgG+TI3UMOXLtgkdnzgzpjKdyJkwFVkSeb8EC4xT7gsLrN9H74Ls30iZFSWuuLGuijJXMYN+WjwSqQt8pG+UzyP5uAtLSJW9u3f8SJW/YnpwTNXwE8jHXPJ++Il34IgNefMqxE/69uwHNVEtyVSw11Q7U+7/xfg5P69jgL4po3+Qe+Ln1NRafHBzJJI0Tuv7UWVF4GhMr218TsgXHy/b4Feorc17MTxetr/7tA7PL9rm9wttK3pevD4mhK5yAeWkxhRNIr33SWm3WN7+o+hz9XNvlrLLG5dN3tt7mw01v319TdfuTdnZvGq8K8Yq76xwvq9qewo3AAAAAAAAAAAAAAAAAAAA8OIfvUM8YTLc6kkAAAAASUVORK5CYII=",
     },
     {
       name: "Maria Shipapo",
@@ -245,7 +245,7 @@ const Innovation: React.FC = () => {
       impact:
         "Improves accessibility and quality of life for persons with disabilities",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",//
+      image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAMFBMVEX////LycbIxsPo5+bMysfs6+r7+/vRz83f3tzX1dPi4d/b2tjw7+7z8vLZ2NXv7+4G0JKeAAAEoElEQVR4nO2d25qrIAxGK4qIp77/2+5ae7JTD0hMgvtfV3MxF6wPCBAJvVwAAAAAAAAAAAAAAAAAAADA2Sg7W1e9975v6vxaSjeHmNI2hRnIBsa/fN5JN4uKMncPtSnGFNUZJDv/U+8p6ax0AyPp3LzeQ7LIpRsZQenX/EbHq3RD91Jv8bs7+iRDa7k6QD8dW+nmhmMD/AbFSrrBoVRhgjdFJ93kMPpQwSHgpDQZN8XQv6SjuFMwS6YXm52CN0Xppm8j3y14WxilG7+Fbr9gIotGhF+WxNK/Y52YIi2wxjVW0DTSCitE+g2Kuk/Fm48TC+jevhEIZkbzcZGiC3V3IoWf6pkYeCacpZcWmcXRCGZGWmSOkqgLM6M1xRix5f5C6wbcUwmqHaZkglqXxKhj05dhLS3zE7ppqHUiBicQF9CZzqALNFpDTUFpqDLrRjhIlW5NSQ1VpmtIDTXu28h2pWoNz9+HmIdhhipj6fnXw/PvaSj3pTpz++c/W5z/fEgYTHUuFv9Dnub8uTa6fKna64pkOW+V6/0A1TDVOkgvVNFUayQdoNnW6Ey0jZDEGp1nwycUnaj5E/CFYiYq/WbxIj6cKg6kI7Frot618ElksNEdZkai7n2pv/N1JyaeKo+jT/Zegs7SuekdUkvyif4o82Kfos4k6Qy7FNPpwYHgq8JpFZQMBF5TTOOW/pQuC6ldU5u3WGRzZYlxqY3QJ+s1sne/RDtwxBardcBa89ubsb9L1Z9+Rep+A12VzdTjm15xzimMrvbvJxVGOeMq5Yf5YDpbN94N+Ka2KW3QAAAAAAAAAAAAcF661uah2LZLIy/c1n58yHMPmausas0y92YpO7qBIQlXa5Vsl97xDLN0GvP8du+n7RlJbbnwltRvdNTUj9veKQ121POuKWUpydRRyf2hQzrwoVgoyP6Xq18I4xzF77lFv162qigcVNujBaUfGmQQlFUkrFZbVBQbqKT16YuKUuGGsvB3RVFm0ThwHfyLhOBhO5lfGIEn3Ngm4UORf49KWZu+CW5BlpXwE/Ylg6qYMkCRN7dx+Hb0hyHv1oa/C5kLvJm2a1+GnGmNRkCQt7ZUogtZ924CceZuyBdrZAYp5zAVEuRbEpm3pB+GXOdEqiefww25JiLNu+R74CrAZD9WvGEy5MtefMMVasQE2dZ8sWnIZSi2WLC96yJpyJOtgWH6hpKxlGm1kEhhPAx5BAV3bVwF3yJZmgG+TI3UMOXLtgkdnzgzpjKdyJkwFVkSeb8EC4xT7gsLrN9H74Ls30iZFSWuuLGuijJXMYN+WjwSqQt8pG+UzyP5uAtLSJW9u3f8SJW/YnpwTNXwE8jHXPJ++Il34IgNefMqxE/69uwHNVEtyVSw11Q7U+7/xfg5P69jgL4po3+Qe+Ln1NRafHBzJJI0Tuv7UWVF4GhMr218TsgXHy/b4Feorc17MTxetr/7tA7PL9rm9wttK3pevD4mhK5yAeWkxhRNIr33SWm3WN7+o+hz9XNvlrLLG5dN3tt7mw01v319TdfuTdnZvGq8K8Yq76xwvq9qewo3AAAAAAAAAAAAAAAAAAAA8OIfvUM8YTLc6kkAAAAASUVORK5CYII=",//
     },
     {
       name: "Twahafffwa Izaloo Nambuwa",
@@ -273,6 +273,24 @@ const Innovation: React.FC = () => {
       impact: "Addresses waste disposal and promotes sustainability",
       funding: "BOOST-UP programme",
       image: "/maketo.jpeg",
+    },
+    {
+      name: "Sunday Simataa",
+      company: "Kasi Cover",
+      sector: "Insuretech",
+      innovation: "Insurance product that auto-deducts N$2 airtime via USSD codes for health/life insurance policies",
+      impact: "Improves accessibility to insurance for underserved populations using mobile technology",
+      funding: "BOOST-UP programme",
+      image: "https://media.licdn.com/dms/image/v2/D4D03AQFVO0X_w-RGQg/profile-displayphoto-shrink_400_400/B4DZVgbjrCHAAk-/0/1741079592326?e=1756339200&v=beta&t=bakVanUJwmrnmV3M_LRFX6kTrAusEV9ykFhoq-UGsXc",
+    },
+    {
+      name: "Tutaleni Ilonga",
+      company: "Edu Game",
+      sector: "Education Technology",
+      innovation: "Immersive institution teaching children to create games that address societal issues; developing a gamified national curriculum",
+      impact: "Empowers youth through creative problem-solving and redefines traditional education models",
+      funding: "BOOST-UP programme",
+      image: "https://hosting.renderforestsites.com/17141523/1149766/media/7fdf2f353715fff5c5e7b43fa17d811b.jpg",
     },
   ];
 

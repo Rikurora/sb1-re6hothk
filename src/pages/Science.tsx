@@ -18,6 +18,7 @@ const Science: React.FC = () => {
         "Namibia's premier science competition showcasing student innovation and scientific excellence across all regions.",
       icon: Trophy,
       color: "bg-ncrst-blue",
+
       stats: {
         participants: "134 students",
         schools: "60 schools",
