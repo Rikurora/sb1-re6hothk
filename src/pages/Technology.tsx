@@ -11,6 +11,7 @@ import {
   Shield,
   Rocket,
 } from "lucide-react";
+import pexel7 from "../assets/pexels7.jpg";
 
 const Technology: React.FC = () => {
   const aiInitiatives = [
@@ -94,13 +95,22 @@ const Technology: React.FC = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="relative bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white py-32 min-h-[80vh] flex items-center justify-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section
+        className="relative min-h-[75vh] flex items-center justify-center"
+        style={{
+          backgroundImage: `url(${pexel7})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/90"></div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-10 leading-heading text-white">
               Technology & Innovation
             </h1>
-            <p className="text-xl max-w-3xl mx-auto leading-body opacity-90">
+            <p className="text-xl max-w-3xl mx-auto leading-body opacity-90 text-white">
               Advancing Namibia's technological capabilities through
               cutting-edge research, world-class laboratories, and strategic
               innovation initiatives.
