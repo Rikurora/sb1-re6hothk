@@ -10,7 +10,7 @@ const Header: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const isHome = location.pathname === "/";
+  // const isHome = location.pathname === "/";
 
   const navigation = [
     {
@@ -118,17 +118,13 @@ const Header: React.FC = () => {
 
   // Effect to handle header transparency based on scroll position
   useEffect(() => {
-    if (!isHome) {
-      setIsScrolled(true);
-      return;
-    }
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
     };
     window.addEventListener("scroll", handleScroll);
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isHome]);
+  }, []);
 
   const handleDropdownToggle = (navName: string) => {
     setActiveDropdown(activeDropdown === navName ? null : navName);
@@ -169,22 +165,18 @@ const Header: React.FC = () => {
   return (
     <header
       className={`
-    fixed top-0 left-0 w-full z-50 transition-colors duration-500
-    ${
-      isHome && !isScrolled
-        ? "bg-transparent shadow-none"
-        : "bg-white shadow-md"
-    }
-    `}
+        fixed top-0 left-0 w-full z-50 transition-colors duration-500
+        ${!isScrolled ? "bg-transparent shadow-none" : "bg-white shadow-md"}
+      `}
       style={{
         pointerEvents: "auto",
-        backdropFilter: isHome && !isScrolled ? "none" : "blur(0px)",
+        backdropFilter: !isScrolled ? "none" : "blur(0px)",
       }}
     >
       {/* Top Banner */}
       <div
         className={`transition-colors duration-500 ${
-          isHome && !isScrolled
+          !isScrolled
             ? "bg-transparent text-white"
             : "bg-ncrst-gold text-blue bg-opacity-100"
         }`}
@@ -198,7 +190,7 @@ const Header: React.FC = () => {
                 <Link
                   to="/news#news"
                   className={`transition-colors hover:underline ${
-                    isHome && !isScrolled ? "text-white" : "text-blue"
+                    !isScrolled ? "text-white" : "text-blue"
                   }`}
                 >
                   News
@@ -206,7 +198,7 @@ const Header: React.FC = () => {
                 <Link
                   to="/news#events"
                   className={`transition-colors hover:underline ${
-                    isHome && !isScrolled ? "text-white" : "text-blue"
+                    !isScrolled ? "text-white" : "text-blue"
                   }`}
                 >
                   Events
@@ -214,7 +206,7 @@ const Header: React.FC = () => {
                 <Link
                   to="/news/#media"
                   className={`transition-colors hover:underline ${
-                    isHome && !isScrolled ? "text-white" : "text-blue"
+                    !isScrolled ? "text-white" : "text-blue"
                   }`}
                 >
                   Media
@@ -224,7 +216,7 @@ const Header: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`transition-colors hover:underline ${
-                    isHome && !isScrolled ? "text-white" : "text-blue"
+                    !isScrolled ? "text-white" : "text-blue"
                   }`}
                 >
                   Open Journal System
@@ -232,7 +224,7 @@ const Header: React.FC = () => {
                 <Link
                   to="/#portals"
                   className={`transition-colors hover:underline ${
-                    isHome && !isScrolled ? "text-white" : "text-blue"
+                    !isScrolled ? "text-white" : "text-blue"
                   }`}
                 >
                   Portals
@@ -242,7 +234,7 @@ const Header: React.FC = () => {
               <div className="flex items-center gap-2 mt-2 sm:mt-0 pl-0 sm:pl-8">
                 <button
                   className={`transition-colors ${
-                    isHome && !isScrolled
+                    !isScrolled
                       ? "text-white border-white"
                       : "hover:text-ncrst-blue"
                   }`}
@@ -252,7 +244,7 @@ const Header: React.FC = () => {
                 <span>|</span>
                 <button
                   className={`transition-colors ${
-                    isHome && !isScrolled
+                    !isScrolled
                       ? "text-white border-white"
                       : "hover:text-ncrst-gold"
                   }`}
@@ -282,14 +274,14 @@ const Header: React.FC = () => {
             <div>
               <h1
                 className={`text-xl font-bold leading-heading ${
-                  isHome && !isScrolled ? "text-white" : "text-ncrst-grey"
+                  !isScrolled ? "text-white" : "text-ncrst-grey"
                 }`}
               >
                 NCRST
               </h1>
               <p
                 className={`text-sm ${
-                  isHome && !isScrolled ? "text-white" : "text-ncrst-grey-dark"
+                  !isScrolled ? "text-white" : "text-ncrst-grey-dark"
                 }`}
               >
                 National Commission on Research, Science & Technology
@@ -306,7 +298,7 @@ const Header: React.FC = () => {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className={`w-full pl-10 pr-4 py-2 border ${
-                  isHome && !isScrolled
+                  !isScrolled
                     ? "border-white bg-transparent text-white placeholder-white"
                     : "border-gray-300 text-ncrst-grey"
                 } rounded-lg focus:ring-2 focus:ring-ncrst-blue focus:border-transparent`}
@@ -314,7 +306,7 @@ const Header: React.FC = () => {
               />
               <Search
                 className={`absolute left-3 top-2.5 h-5 w-5 ${
-                  isHome && !isScrolled ? "text-white" : "text-gray-400"
+                  !isScrolled ? "text-white" : "text-gray-400"
                 }`}
               />
             </div>
@@ -326,7 +318,7 @@ const Header: React.FC = () => {
             className={`lg:hidden p-2 rounded-md ${
               isMenuOpen
                 ? "text-ncrst-grey bg-white"
-                : isHome && !isScrolled
+                : !isScrolled
                 ? "text-white hover:bg-white/10"
                 : "text-ncrst-grey hover:bg-gray-100"
             }`}
@@ -348,7 +340,7 @@ const Header: React.FC = () => {
                         to={item.href}
                         onClick={handleMainNavClick}
                         className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                          isHome && !isScrolled
+                          !isScrolled
                             ? "text-white border-white"
                             : location.pathname === item.href ||
                               location.pathname.startsWith(item.href + "/")
@@ -361,7 +353,7 @@ const Header: React.FC = () => {
                       <button
                         onClick={() => handleDropdownToggle(item.name)}
                         className={`ml-1 p-1 rounded-md ${
-                          isHome && !isScrolled
+                          !isScrolled
                             ? "hover:bg-white/10 text-white"
                             : "hover:bg-gray-50"
                         }`}
@@ -371,7 +363,7 @@ const Header: React.FC = () => {
                           size={16}
                           className={`transition-transform ${
                             activeDropdown === item.name ? "rotate-180" : ""
-                          } ${isHome && !isScrolled ? "text-white" : ""}`}
+                          } ${!isScrolled ? "text-white" : ""}`}
                         />
                       </button>
                     </div>
@@ -397,7 +389,7 @@ const Header: React.FC = () => {
                     to={item.href}
                     onClick={handleMainNavClick}
                     className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                      isHome && !isScrolled
+                      !isScrolled
                         ? "text-white border-white"
                         : location.pathname === item.href ||
                           location.pathname.startsWith(item.href + "/")
