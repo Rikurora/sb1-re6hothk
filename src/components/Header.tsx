@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Search, Menu, X, ChevronDown } from "lucide-react";
 
@@ -6,8 +6,11 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+
+  const isHome = location.pathname === "/";
 
   const navigation = [
     {
@@ -113,6 +116,20 @@ const Header: React.FC = () => {
     },
   ];
 
+  // Effect to handle header transparency based on scroll position
+  useEffect(() => {
+    if (!isHome) {
+      setIsScrolled(true);
+      return;
+    }
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isHome]);
+
   const handleDropdownToggle = (navName: string) => {
     setActiveDropdown(activeDropdown === navName ? null : navName);
   };
@@ -129,21 +146,14 @@ const Header: React.FC = () => {
 
   const handleAnchorNavigation = (href: string, event: React.MouseEvent) => {
     event.preventDefault();
-
-    // Parse the href to get the path and hash
     const [path, hash] = href.split("#");
-
-    // If we're already on the target page, just scroll to the section
     if (location.pathname === path && hash) {
       const element = document.getElementById(hash);
       if (element) {
         element.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     } else {
-      // Navigate to the page first, then scroll to the section
       navigate(href);
-
-      // Use setTimeout to ensure the page has loaded before scrolling
       if (hash) {
         setTimeout(() => {
           const element = document.getElementById(hash);
@@ -153,23 +163,56 @@ const Header: React.FC = () => {
         }, 100);
       }
     }
-
     handleDropdownItemClick();
   };
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header
+      className={`${
+        isHome
+          ? "fixed top-0 left-0 w-full z-50 transition-colors duration-500"
+          : "sticky top-0 left-0 w-full z-50 transition-colors duration-500"
+      }
+      ${
+        isHome && !isScrolled
+          ? "bg-transparent shadow-none"
+          : "bg-white shadow-md"
+      }
+      `}
+      style={{
+        pointerEvents: "auto",
+        backdropFilter: isHome && !isScrolled ? "none" : "blur(0px)",
+      }}
+    >
       {/* Top Banner */}
-      <div className="bg-ncrst-gold text-blue py-2 bg-opacity-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        className={`transition-colors duration-500 ${
+          isHome && !isScrolled
+            ? "bg-transparent text-white"
+            : "bg-ncrst-gold text-blue bg-opacity-100"
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
           <div className="flex justify-between items-center text-sm">
             <div>Republic of Namibia</div>
             <div className="flex space-x-4">
-              <button className="hover:text-ncrst-gold transition-colors">
+              <button
+                className={`transition-colors ${
+                  isHome && !isScrolled
+                    ? "text-white border-white"
+                    : "hover:text-ncrst-gold"
+                }`}
+              >
                 EN
               </button>
               <span>|</span>
-              <button className="hover:text-ncrst-gold transition-colors">
+              <button
+                className={`transition-colors ${
+                  isHome && !isScrolled
+                    ? "text-white border-white"
+                    : "hover:text-ncrst-gold"
+                }`}
+              >
                 Local
               </button>
             </div>
@@ -192,10 +235,18 @@ const Header: React.FC = () => {
               className="w-12 h-12 object-contain"
             />
             <div>
-              <h1 className="text-xl font-bold text-ncrst-grey leading-heading">
+              <h1
+                className={`text-xl font-bold leading-heading ${
+                  isHome && !isScrolled ? "text-white" : "text-ncrst-grey"
+                }`}
+              >
                 NCRST
               </h1>
-              <p className="text-sm text-ncrst-grey-dark">
+              <p
+                className={`text-sm ${
+                  isHome && !isScrolled ? "text-white" : "text-ncrst-grey-dark"
+                }`}
+              >
                 National Commission on Research, Science & Technology
               </p>
             </div>
@@ -209,17 +260,31 @@ const Header: React.FC = () => {
                 placeholder="Search..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ncrst-blue focus:border-transparent"
+                className={`w-full pl-10 pr-4 py-2 border ${
+                  isHome && !isScrolled
+                    ? "border-white bg-transparent text-white placeholder-white"
+                    : "border-gray-300 text-ncrst-grey"
+                } rounded-lg focus:ring-2 focus:ring-ncrst-blue focus:border-transparent`}
                 aria-label="Search site"
               />
-              <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
+              <Search
+                className={`absolute left-3 top-2.5 h-5 w-5 ${
+                  isHome && !isScrolled ? "text-white" : "text-gray-400"
+                }`}
+              />
             </div>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-md text-ncrst-grey hover:bg-gray-100"
+            className={`lg:hidden p-2 rounded-md ${
+              isMenuOpen
+                ? "text-ncrst-grey bg-white"
+                : isHome && !isScrolled
+                ? "text-white hover:bg-white/10"
+                : "text-ncrst-grey hover:bg-gray-100"
+            }`}
             aria-label="Toggle navigation menu"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -238,8 +303,10 @@ const Header: React.FC = () => {
                         to={item.href}
                         onClick={handleMainNavClick}
                         className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                          location.pathname === item.href ||
-                          location.pathname.startsWith(item.href + "/")
+                          isHome && !isScrolled
+                            ? "text-white border-white"
+                            : location.pathname === item.href ||
+                              location.pathname.startsWith(item.href + "/")
                             ? "text-ncrst-blue bg-ncrst-gold/10"
                             : "text-ncrst-grey hover:text-ncrst-blue hover:bg-gray-50"
                         }`}
@@ -248,14 +315,18 @@ const Header: React.FC = () => {
                       </Link>
                       <button
                         onClick={() => handleDropdownToggle(item.name)}
-                        className="ml-1 p-1 rounded-md hover:bg-gray-50"
+                        className={`ml-1 p-1 rounded-md ${
+                          isHome && !isScrolled
+                            ? "hover:bg-white/10 text-white"
+                            : "hover:bg-gray-50"
+                        }`}
                         aria-label={`Toggle ${item.name} dropdown`}
                       >
                         <ChevronDown
                           size={16}
                           className={`transition-transform ${
                             activeDropdown === item.name ? "rotate-180" : ""
-                          }`}
+                          } ${isHome && !isScrolled ? "text-white" : ""}`}
                         />
                       </button>
                     </div>
@@ -281,8 +352,10 @@ const Header: React.FC = () => {
                     to={item.href}
                     onClick={handleMainNavClick}
                     className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                      location.pathname === item.href ||
-                      location.pathname.startsWith(item.href + "/")
+                      isHome && !isScrolled
+                        ? "text-white border-white"
+                        : location.pathname === item.href ||
+                          location.pathname.startsWith(item.href + "/")
                         ? "text-ncrst-blue bg-ncrst-gold/10"
                         : "text-ncrst-grey hover:text-ncrst-blue hover:bg-gray-50"
                     }`}
@@ -297,7 +370,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="lg:hidden border-t border-gray-200 py-4 max-h-[80vh] overflow-y-auto">
+          <nav className="lg:hidden border-t border-gray-200 py-4 max-h-[80vh] overflow-y-auto bg-white transition-colors duration-500">
             {/* Mobile Search */}
             <div className="mb-4">
               <div className="relative">
@@ -306,7 +379,7 @@ const Header: React.FC = () => {
                   placeholder="Search..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ncrst-blue focus:border-transparent"
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 text-ncrst-grey rounded-lg focus:ring-2 focus:ring-ncrst-blue focus:border-transparent"
                   aria-label="Search site"
                 />
                 <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
@@ -318,12 +391,7 @@ const Header: React.FC = () => {
                 <div key={item.name}>
                   <Link
                     to={item.href}
-                    className={`block px-3 py-2 text-base font-medium rounded-md transition-colors ${
-                      location.pathname === item.href ||
-                      location.pathname.startsWith(item.href + "/")
-                        ? "text-ncrst-blue bg-ncrst-gold/10"
-                        : "text-ncrst-grey hover:text-ncrst-blue hover:bg-gray-50"
-                    }`}
+                    className={`block px-3 py-2 text-base font-medium rounded-md transition-colors text-ncrst-grey`}
                     onClick={handleMainNavClick}
                   >
                     {item.name}

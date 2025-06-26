@@ -249,7 +249,7 @@ const Home: React.FC = () => {
 
       {/* Hero Section */}
       <div className="border-t-4 border-ncrst-gold w-full"></div>
-      <section className="relative text-ncrst-grey">
+      <section className="relative text-ncrst-grey pt-0 mt-0">
         <div className="absolute inset-0"></div>
         <CurvedBackground />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
