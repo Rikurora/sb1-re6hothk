@@ -226,7 +226,7 @@ const Innovation: React.FC = () => {
       innovation: "Local farming and produce",
       impact: "Promotes sustainable gardening practices",
       funding: "NICW programme",
-      image: "/lilekela.jpeg",//
+      image: "/lilekela.jpeg", //
     },
     {
       name: "Lydia Ndinelao Horn",
@@ -245,7 +245,7 @@ const Innovation: React.FC = () => {
       impact:
         "Improves accessibility and quality of life for persons with disabilities",
       funding: "NICW programme",
-      image: "https://lasanitarym.com/img/blog3.jpg",//
+      image: "https://lasanitarym.com/img/blog3.jpg", //
     },
     {
       name: "Twahafffwa Izaloo Nambuwa",
@@ -279,7 +279,7 @@ const Innovation: React.FC = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-ncrst-green text-white py-16 h-[300px] flex items-center justify-center">
+      <section className="relative bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white py-32 min-h-[80vh] flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">

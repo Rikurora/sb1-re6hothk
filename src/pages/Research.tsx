@@ -78,7 +78,7 @@ const Research: React.FC = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="relative bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white py py-16 h-[300px] flex items-center justify-center">
+      <section className="relative bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white py-32 min-h-[80vh] flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">

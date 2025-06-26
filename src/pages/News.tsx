@@ -161,7 +161,7 @@ const News: React.FC = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="relative bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white py-16 h-[300px] flex items-center justify-center">
+      <section className="relative bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white py-32 min-h-[80vh] flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-heading">
@@ -263,7 +263,7 @@ const News: React.FC = () => {
       )}
 
       {/* News Grid */}
-      <section className="py-12">
+      <section className="py-12" id="news">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center mb-8">
             <h2 className="text-3xl font-bold text-ncrst-grey leading-heading">
@@ -335,7 +335,7 @@ const News: React.FC = () => {
       </section>
 
       {/* Upcoming Events */}
-      <section className="py-16 bg-ncrst-grey-light">
+      <section className="py-16 bg-ncrst-grey-light" id="events">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-ncrst-grey mb-4 leading-heading">
@@ -388,7 +388,7 @@ const News: React.FC = () => {
       </section>
 
       {/* Press Releases */}
-      <section className="py-16">
+      <section className="py-16" id="media">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">

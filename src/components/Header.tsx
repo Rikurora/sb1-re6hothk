@@ -106,14 +106,14 @@ const Header: React.FC = () => {
         { name: "Vacancies", href: "/vacancies" },
       ],
     },
-    {
-      name: "Connect",
-      href: "/contact",
-      dropdown: [
-        { name: "News & Events", href: "/news" },
-        { name: "Contact", href: "/contact" },
-      ],
-    },
+    // {
+    //   name: "Connect",
+    //   href: "/contact",
+    //   dropdown: [
+    //     { name: "News & Events", href: "/news" },
+    //     { name: "Contact", href: "/contact" },
+    //   ],
+    // },
   ];
 
   // Effect to handle header transparency based on scroll position
@@ -168,17 +168,14 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`${
-        isHome
-          ? "fixed top-0 left-0 w-full z-50 transition-colors duration-500"
-          : "sticky top-0 left-0 w-full z-50 transition-colors duration-500"
-      }
-      ${
-        isHome && !isScrolled
-          ? "bg-transparent shadow-none"
-          : "bg-white shadow-md"
-      }
-      `}
+      className={`
+    fixed top-0 left-0 w-full z-50 transition-colors duration-500
+    ${
+      isHome && !isScrolled
+        ? "bg-transparent shadow-none"
+        : "bg-white shadow-md"
+    }
+    `}
       style={{
         pointerEvents: "auto",
         backdropFilter: isHome && !isScrolled ? "none" : "blur(0px)",
@@ -192,29 +189,77 @@ const Header: React.FC = () => {
             : "bg-ncrst-gold text-blue bg-opacity-100"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-          <div className="flex justify-between items-center text-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center text-sm gap-2">
             <div>Republic of Namibia</div>
-            <div className="flex space-x-4">
-              <button
-                className={`transition-colors ${
-                  isHome && !isScrolled
-                    ? "text-white border-white"
-                    : "hover:text-ncrst-gold"
-                }`}
-              >
-                EN
-              </button>
-              <span>|</span>
-              <button
-                className={`transition-colors ${
-                  isHome && !isScrolled
-                    ? "text-white border-white"
-                    : "hover:text-ncrst-gold"
-                }`}
-              >
-                Local
-              </button>
+            {/* Top Banner Navigation - stacked on mobile, inline on desktop */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <nav className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start sm:items-center">
+                <Link
+                  to="/news#news"
+                  className={`transition-colors hover:underline ${
+                    isHome && !isScrolled ? "text-white" : "text-blue"
+                  }`}
+                >
+                  News
+                </Link>
+                <Link
+                  to="/news#events"
+                  className={`transition-colors hover:underline ${
+                    isHome && !isScrolled ? "text-white" : "text-blue"
+                  }`}
+                >
+                  Events
+                </Link>
+                <Link
+                  to="/news/#media"
+                  className={`transition-colors hover:underline ${
+                    isHome && !isScrolled ? "text-white" : "text-blue"
+                  }`}
+                >
+                  Media
+                </Link>
+                <a
+                  href="https://njrst.ncrst.na/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`transition-colors hover:underline ${
+                    isHome && !isScrolled ? "text-white" : "text-blue"
+                  }`}
+                >
+                  Open Journal System
+                </a>
+                <Link
+                  to="/#portals"
+                  className={`transition-colors hover:underline ${
+                    isHome && !isScrolled ? "text-white" : "text-blue"
+                  }`}
+                >
+                  Portals
+                </Link>
+              </nav>
+              {/* Add left padding on language switch for spacing */}
+              <div className="flex items-center gap-2 mt-2 sm:mt-0 pl-0 sm:pl-8">
+                <button
+                  className={`transition-colors ${
+                    isHome && !isScrolled
+                      ? "text-white border-white"
+                      : "hover:text-ncrst-blue"
+                  }`}
+                >
+                  EN
+                </button>
+                <span>|</span>
+                <button
+                  className={`transition-colors ${
+                    isHome && !isScrolled
+                      ? "text-white border-white"
+                      : "hover:text-ncrst-gold"
+                  }`}
+                >
+                  Local
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -293,7 +338,7 @@ const Header: React.FC = () => {
 
         {/* Navigation - Desktop */}
         <nav className="hidden lg:block border-t border-gray-200">
-          <div className="flex space-x-8 py-4">
+          <div className="flex justify-center space-x-8 py-4">
             {navigation.map((item) => (
               <div key={item.name} className="relative">
                 {item.dropdown ? (
