@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Search, Menu, X, ChevronDown } from "lucide-react";
+import logo from "../assets/logo.jpeg";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -267,7 +268,7 @@ const Header: React.FC = () => {
             onClick={handleMainNavClick}
           >
             <img
-              src="/NCRST.png"
+              src={logo}
               alt="NCRST Logo"
               className="w-12 h-12 object-contain"
             />
