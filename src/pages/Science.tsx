@@ -10,6 +10,12 @@ import {
   Target,
 } from "lucide-react";
 import pexel3 from "../assets/pexel11.jpg";
+import matholymp from "../assets/matholymp.jpg";
+import sciencefair from "../assets/sciencefair.jpg";
+import sciencequiz from "../assets/sciencequiz.jpg";
+import spaceweek from "../assets/spaceweek.jpg";
+import stemprogrammes from "../assets/stemprogrammes.jpg";
+import pexels8 from "../assets/pexels8.jpg";
 
 const Science: React.FC = () => {
   const sciencePrograms = [
@@ -19,7 +25,7 @@ const Science: React.FC = () => {
         "Namibia's premier science competition showcasing student innovation and scientific excellence across all regions.",
       icon: Trophy,
       color: "bg-ncrst-blue",
-
+      bg: sciencefair,
       stats: {
         participants: "134 students",
         schools: "60 schools",
@@ -33,6 +39,7 @@ const Science: React.FC = () => {
         "National competition promoting mathematical excellence and problem-solving skills among high school students.",
       icon: Target,
       color: "bg-ncrst-grey",
+      bg: matholymp,
       stats: {
         participants: "2744 students",
         regions: "All 14 regions",
@@ -46,6 +53,7 @@ const Science: React.FC = () => {
         "Interactive competition testing scientific knowledge and encouraging STEM learning among young Namibians.",
       icon: Brain,
       color: "bg-ncrst-gold",
+      bg: sciencequiz,
       stats: {
         participants: "27 students",
         schools: " schools",
@@ -59,6 +67,7 @@ const Science: React.FC = () => {
         "This initiative provides a unique platform to build practical skills, test scientific knowledge and showcase talents in STEM.",
       icon: Users,
       color: "bg-ncrst-gold",
+      bg: stemprogrammes,
       stats: {
         beneficiaries: "4,300+ students",
         programs: "Mr. & Mrs. STEM",
@@ -72,6 +81,7 @@ const Science: React.FC = () => {
         "Annual celebration of scientific achievements with workshops, exhibitions, and public engagement activities.",
       icon: Star,
       color: "bg-ncrst-blue",
+      bg: pexels8,
       stats: {
         duration: "1 week annually",
         events: "7 activities",
@@ -85,6 +95,7 @@ const Science: React.FC = () => {
         "Celebrating space science and astronomy, inspiring curiosity about the universe and Namibia's dark skies.",
       icon: Microscope,
       color: "bg-ncrst-grey",
+      bg: spaceweek,
       stats: {
         duration: "1 week annually",
         activities: "Stargazing events",
@@ -176,11 +187,25 @@ const Science: React.FC = () => {
                   key={index}
                   className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-1"
                 >
-                  <div className={`${program.color} p-6 text-white`}>
-                    <IconComponent size={48} className="mb-4" />
-                    <h3 className="text-xl font-bold mb-2 leading-heading">
-                      {program.title}
-                    </h3>
+                  <div
+                    className="relative rounded-t-xl overflow-hidden"
+                    style={{
+                      backgroundImage: `url(${program.bg})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                  >
+                    <div
+                      className={`absolute inset-0 bg-black/70`}
+                      style={{ opacity: 0.85 }}
+                    ></div>
+                    <div className="relative z-10 p-6 text-white flex flex-col items-center">
+                      <IconComponent size={48} className="mb-4" />
+                      <h3 className="text-xl font-bold mb-2 leading-heading">
+                        {program.title}
+                      </h3>
+                    </div>
                   </div>
                   <div className="p-6">
                     <p className="text-ncrst-grey-dark mb-4 leading-body">
