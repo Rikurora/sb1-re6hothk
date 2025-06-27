@@ -150,14 +150,14 @@ const Header: React.FC = () => {
         element.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     } else {
-      navigate(href);
+      navigate(path + (hash ? `#${hash}` : ""));
       if (hash) {
         setTimeout(() => {
           const element = document.getElementById(hash);
           if (element) {
             element.scrollIntoView({ behavior: "smooth", block: "start" });
           }
-        }, 100);
+        }, 300); // Slightly longer delay for navigation
       }
     }
     handleDropdownItemClick();
@@ -221,6 +221,7 @@ const Header: React.FC = () => {
                   className={`transition-colors hover:underline ${
                     !isScrolled ? "text-white" : "text-blue"
                   }`}
+                  onClick={(e) => handleAnchorNavigation("/#portals", e)}
                 >
                   Portals
                 </Link>
