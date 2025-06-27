@@ -53,7 +53,7 @@ const Innovation: React.FC = () => {
         "Developed a mobile app & website, expanded to an Author Hub for African writers, increased social media presence, and secured seed funding from Impacther Africa",
       funding: "BOOST-UP programme",
       image:
-        "https://scontent.fers4-1.fna.fbcdn.net/v/t39.30808-6/473694455_1784071045469124_2245374436978736370_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Q-XdgqlpUSAQ7kNvwFSbrBe&_nc_oc=AdkDF1Lr5hkZ3IcpwX3Iy0DX5A7PAGRivbUV1IFF9-FNddMhjBwptwPgjfHyRtzAbh0&_nc_zt=23&_nc_ht=scontent.fers4-1.fna&_nc_gid=a4puxn5rJRqgRsKy3jJMdQ&oh=00_AfPrus-3xhIR4iTk69JKeaNEd7h5tryd7tv1W-R-rzi_dQ&oe=684F25E7",
+        "https://external.fers4-1.fna.fbcdn.net/emg1/v/t13/4227578532416473?url=https%3A%2F%2Fnamibiatoday.com%2Fwp-content%2Fuploads%2F2025%2F01%2FVictoria-Haihambi.png&fb_obo=1&utld=namibiatoday.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p500x261_q75_tt6&_nc_gid=Qw7fklvl8Hk4yQg8XSpm1w&_nc_oc=AdkjrC1AMA3_XmwRADX0T6Xo_9nq71BvjcIDTodrj2qZoWwgg7rmpVWm-p33GDgavbo&ccb=13-1&oh=06_Q3-0Aej4-mIGHEqqLh_2rsvIQlIh1JNZwq24VlFe8oBUroDA&oe=685EE9AC&_nc_sid=c97757",
     },
     {
       name: "Sara Iyaloo S. Ekondo",
@@ -65,7 +65,7 @@ const Innovation: React.FC = () => {
         "Reduced farm-level food spoilage, created jobs, and built a small-holder farmer database for sustainable sourcing",
       funding: "NICW programme",
       image:
-        "https://scontent.fers4-1.fna.fbcdn.net/v/t39.30808-6/481176930_647080284525501_5494073247083489745_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rNRO26IIbQIQ7kNvwE0pR36&_nc_oc=Adk1dFHYI2LntyH06iqcVS4B15CeqdIL3EkijSxR4PQ8Iw_XAJxLCRip-tioeznMbAM&_nc_zt=23&_nc_ht=scontent.fers4-1.fna&_nc_gid=Z5iFbcKMLejdjJU8n97phw&oh=00_AfOg1Wlh_hqTApR7hSyQK5pWcp7apR-ZOufUStmQUjP5cQ&oe=684F37F5",
+        "https://scontent.fers4-1.fna.fbcdn.net/v/t39.30808-6/481176930_647080284525501_5494073247083489745_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ccKrlaDeBIoQ7kNvwF1sU1-&_nc_oc=AdmMXurbFCi2DE7UOx5Jp470bjqSBqE_oDL4lSjsgfhg9qdkgVbQ1XDF4vhcTAcCZBY&_nc_zt=23&_nc_ht=scontent.fers4-1.fna&_nc_gid=4Pps6uV_ihaeDLzMdfPB3Q&oh=00_AfPHHgleXL2TGUU5sYkphO7a5rOt6WTLgMU6LTV3OIdnhg&oe=6862C635",
     },
     {
       name: "Verna Nghuumono",
@@ -77,39 +77,6 @@ const Innovation: React.FC = () => {
         "Reducing period poverty in Namibia, decreasing school absenteeism, and providing eco-friendly menstrual solutions",
       funding: "NICW programme",
       image: "https://lasanitarym.com/img/blog3.jpg",
-    },
-    {
-      name: "James Mwandemele",
-      company: "FinTech Namibia",
-      sector: "Financial Technology",
-      innovation:
-        "Mobile payment platform for rural and underbanked populations",
-      impact: "50,000+ users, 300+ merchant partners",
-      funding: "N$280,000 from Innovation Fund",
-      image:
-        "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400",
-    },
-    {
-      name: "Elizabeth Nghipondoka",
-      company: "EduTech Innovations",
-      sector: "Education Technology",
-      innovation:
-        "Digital learning platform with offline capabilities for remote schools",
-      impact: "25 schools, 2,000+ students benefiting from digital education",
-      funding: "N$180,000 from BOOSTUP 2024",
-      image:
-        "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400",
-    },
-    {
-      name: "Peter Shipanga",
-      company: "Mining Tech Solutions",
-      sector: "Mining Technology",
-      innovation:
-        "AI-powered mineral exploration and safety monitoring systems",
-      impact: "40% improvement in exploration accuracy, enhanced worker safety",
-      funding: "N$520,000 from Industry Partnership",
-      image:
-        "https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=400",
     },
   ];
 
