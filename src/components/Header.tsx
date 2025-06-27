@@ -189,6 +189,14 @@ const Header: React.FC = () => {
             <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
               <nav className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start sm:items-center">
                 <Link
+                  to="#"
+                  className={`transition-colors hover:underline ${
+                    !isScrolled ? "text-white" : "text-blue"
+                  }`}
+                >
+                  IP
+                </Link>
+                <Link
                   to="/news"
                   className={`transition-colors hover:underline ${
                     !isScrolled ? "text-white" : "text-blue"
