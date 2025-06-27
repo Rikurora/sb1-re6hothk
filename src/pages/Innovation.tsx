@@ -158,9 +158,9 @@ const Innovation: React.FC = () => {
             {challenges.map((challenge, index) => (
               <div
                 key={index}
-                className="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-ncrst-green hover:shadow-xl transition-all"
+                className="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-ncrst-grey hover:shadow-xl transition-all"
               >
-                <div className="bg-gradient-to-r from-ncrst-grey to-ncrst-blue text-white p-6">
+                <div className="bg-gradient-to-r from-ncrst-grey to-ncrst-gold text-white p-6">
                   <div className="flex items-center space-x-3 mb-3">
                     <Rocket size={32} />
                     <h3 className="text-2xl font-bold leading-heading">
@@ -227,7 +227,7 @@ const Innovation: React.FC = () => {
                     </div>
                   </div>
 
-                  <button className="w-full mt-6 bg-ncrst-blue text-white py-3 rounded-lg font-semibold hover:bg-ncrst-gold/90 transition-colors">
+                  <button className="w-full mt-6 bg-ncrst-gold text-ncrst-grey py-3 rounded-lg font-semibold hover:bg-ncrst-gold/90 transition-colors">
                     Apply Now
                   </button>
                 </div>

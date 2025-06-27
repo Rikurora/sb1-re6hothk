@@ -129,12 +129,12 @@ const About: React.FC = () => {
             <div className="lg:col-span-1">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="bg-ncrst-grey p-6 text-white text-center bg-opacity-70">
-                  <div className="w-32 h-32 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <div className="w-32 h-32 bg-white/20 rounded-full mx-auto mb-4 flex items-center shadow-lg justify-center">
                     {/* <Users className="text-white" size={48} /> */}
                     <img
                       src={ceoImg}
                       alt="CEO"
-                      className="w-32 h-32 rounded-full object-cover"
+                      className="w-32 h-32 rounded-full shadow-lg object-cover"
                     />
                   </div>
                   <h3 className="text-xl font-bold leading-heading">

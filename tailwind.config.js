@@ -5,11 +5,11 @@ export default {
     extend: {
       colors: {
         ncrst: {
-          grey: '#777675',
-          gold: '#FFD332',
-          green: '#009E85',
-          red: '#E5152B',
-          blue: '#312783',
+          grey: '#777675', // #707272
+          gold: '#FFD332', // #ffd13f
+          green: '#009E85', //
+          red: '#E5152B', //
+          blue: '#312783', //
           yellow: "#F59E0B",
           'grey-light': '#f8f8f8',
           'grey-dark': '#5a5958',

@@ -60,7 +60,7 @@ const Home: React.FC = () => {
       description:
         "Strengthening human resources and infrastructure for sustainable R&D capabilities.",
       icon: Award,
-      color: "bg-purple-600",
+      color: "bg-ncrst-red",
       link: "/research",
     },
   ];
@@ -103,7 +103,7 @@ const Home: React.FC = () => {
       description:
         "Research addressing social, economic, and cultural challenges for sustainable development.",
       icon: Users,
-      color: "bg-purple-600",
+      color: "bg-ncrst-red",
       link: "/research#social-sciences",
     },
     {
@@ -111,7 +111,7 @@ const Home: React.FC = () => {
       description:
         "Strategic collaborations with academia, industry, and international organizations.",
       icon: BookOpen,
-      color: "bg-indigo-600",
+      color: "bg-ncrst-blue",
       link: "/about#partnerships",
     },
   ];
