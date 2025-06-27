@@ -196,6 +196,15 @@ const Header: React.FC = () => {
                 >
                   News & Events
                 </Link>
+                <Link
+                  to="/news#media"
+                  className={`transition-colors hover:underline ${
+                    !isScrolled ? "text-white" : "text-blue"
+                  }`}
+                  onClick={(e) => handleAnchorNavigation("/news#media", e)}
+                >
+                  Press & Media
+                </Link>
                 <a
                   href="https://bch.ncrst.na/"
                   target="_blank"
