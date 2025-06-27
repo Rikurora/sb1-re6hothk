@@ -189,29 +189,23 @@ const Header: React.FC = () => {
             <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
               <nav className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start sm:items-center">
                 <Link
-                  to="/news#news"
+                  to="/news"
                   className={`transition-colors hover:underline ${
                     !isScrolled ? "text-white" : "text-blue"
                   }`}
                 >
-                  News
+                  News & Events
                 </Link>
-                <Link
-                  to="/news#events"
+                <a
+                  href="https://bch.ncrst.na/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`transition-colors hover:underline ${
                     !isScrolled ? "text-white" : "text-blue"
                   }`}
                 >
-                  Events
-                </Link>
-                <Link
-                  to="/news/#media"
-                  className={`transition-colors hover:underline ${
-                    !isScrolled ? "text-white" : "text-blue"
-                  }`}
-                >
-                  Media
-                </Link>
+                  BCH Portal
+                </a>
                 <a
                   href="https://njrst.ncrst.na/"
                   target="_blank"
